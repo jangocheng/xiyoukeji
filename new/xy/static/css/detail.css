@@ -1,0 +1,112 @@
+header {
+    background: #eee;
+    line-height: 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.detailOne {
+    background: url('../img/01.jpg');
+    background-size: cover;
+    background-position: 50%;
+    padding: 100px 50px;
+    margin-top: 50px;
+    color: #fff;
+}
+
+.detailOne h1,
+.detailOne h3 {
+    text-shadow: 0 0 2px #666;
+    line-height: 60px;
+}
+
+.detailOne h1:after {
+    content: '';
+    display: block;
+    width: 50px;
+    background: #fff;
+    height: 3px;
+    box-shadow: 0 0 2px #666;
+}
+
+.detailOne a {
+    margin-top: 30px;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.detailOne a:hover {
+    border: 1px solid #dde;
+    background: #dde;
+}
+
+.detail-intro {
+    padding: 10px 30px;
+    background: #f5f5f5;
+}
+
+.detail-intro-card {
+    background: #fbfbfb;
+}
+
+.brief-intro {
+    box-sizing: border-box;
+    padding: 80px 30px;
+    background: #fff;
+    color: #333;
+}
+
+.service {
+    box-sizing: border-box;
+    padding: 80px 0 0 30px;
+    color: #333;
+}
+
+.brief-intro h2 {
+    font-weight: normal;
+    line-height: 60px;
+}
+
+.brief-intro p,
+.service li {
+    color: #666;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.detail-img {
+    margin-top: 30px;
+}
+
+.detail-img img {
+    width: 100%;
+}
+
+footer {
+    line-height: 30px;
+    padding: 50px 30px;
+}
+
+@media (max-width: 991px) {
+    .brief-intro {
+        padding: 30px 20px;
+    }
+    .service {
+        box-sizing: border-box;
+        padding: 30px 0 0 20px;
+        color: #333;
+    }
+    .detail-intro {
+        padding: 20px 0;
+    }
+}
