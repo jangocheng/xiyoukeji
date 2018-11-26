@@ -27,6 +27,7 @@ h1,h2,h3,h4 {
 	font-size: 14px;
 	font-weight: bold;
 	padding-bottom: 35px;
+  color: #666666
 }
 .bold {
 	font-weight: bold;
@@ -55,22 +56,23 @@ p {
 	min-width: 34px;
 }*/
 #about img {
-  min-width: 34px;
+  
   width: 80px;
   height: 80px;
   margin-bottom: 20px;
 }
-#process {
+/*#process {
   width: 100%;
   height: 250px;
-  background:#bfbfbf1a;
+  background:#bfbfbf1a
   padding-top: 75px;
-  border-radius: 50px;
+  border-radius: 50px;*/
 }
-#process div {
+/*#process div {
   display: inline-block;
-  width: 16.3%;
-  text-align:center;
+  width: 16%;
+  min-width: 155px;
+  text-align:center;*/
 
 }
 
@@ -302,6 +304,12 @@ p {
 /* team section */
 #team {
   text-align: center;
+}
+#team p {
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 15px;
 }
 #team h3 {
   color: #202020;
