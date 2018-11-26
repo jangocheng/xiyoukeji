@@ -348,6 +348,10 @@ p {
     background: #f9f9f9;
     text-align: center;
 }
+#contact img {
+    width: 25%;
+    margin-bottom: 10px;
+}
 #contact .fa {
     font-size: 40px;
 }
