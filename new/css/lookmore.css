@@ -1,10 +1,13 @@
 * {
     padding: 0;
     margin: 0;
+    list-style: none;
 
 }
 
-.container{
+
+
+.home_container {
     text-align: center;
     width: 100%;
 }
@@ -12,16 +15,20 @@
 .title {
     font-size: 35px;
     line-height: 100px;
+    /* width: 100%; */
+    /* margin:0 auto; */
+    text-align: center;
+    margin-top: 100px;
 
 }
 
 .more_case {
-    
+
     overflow: hidden;
     display: inline-block;
     /* padding: 0px 10px; */
     margin-top: 20px;
-    
+
     padding: 10px;
     border-radius: 5px;
     background: rgba(245, 245, 245, 1)
@@ -39,8 +46,8 @@
     width: 100%;
 }
 
-.small_case {
-    text-decoration: none;
+.small_case:hover {
+    text-decoration: none
 }
 
 .content h4 {
@@ -61,7 +68,10 @@
 
 }
 
-
+.scroll {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
 
 
 
@@ -71,24 +81,48 @@
         transition: all 0.3s;
     }
 
-    .case-img>img:hover {
+    /* .case-img>img:hover {
         transform: scale(1.1);
-        width: 105%;
-        height: 105%;
+    } */
+    .more_case:hover .case-img>img {
+        transform: scale(1.1);
     }
-    .more_case{
+
+    .more_case {
         width: 25%;
         margin-left: 40px;
+
+    }
+}
+
+@media (max-width:768px) {
+    .nav-tabs.nav-justified>li {
+        /* float: left; */
+        display: table-cell;
+        width: 1%;
+    }
+
+    .nav-tabs.nav-justified {
+        /* display: flex; */
+        min-width: 768px;
+        /* margin: 0 auto; */
+    }
+
+    .scroll {
+        overflow-x: auto;
+        overflow-y: hidden;
+        width: calc(100vw - 30px);
+
+
     }
 }
 
 
-
 @media (max-width: 799px) and (min-width:640px) {
-    .more_case{
+    .more_case {
         width: 40%;
         margin-left: 40px;
-       
+        overflow: hidden;
     }
 
 
@@ -96,41 +130,153 @@
         transition: all 0.3s;
     }
 
-    .case-img>img:hover {
+    .more_case:hover .case-img>img {
         transform: scale(1.1);
-        width: 105%;
-        height: 105%;
-    }   
+    }
+}
+
+@media (max-width: 639) {
+    .more_case {
+        width: 100%;
+
+
+    }
 }
 
 
-/* @media (max-width: 768px) and (min-width: 500px) {
-    .case_box_item {
-        width: 50%;
-        height: 200px;
+
+
+
+/* start navigation */
+
+
+.custom-navbar {
+    background: #ffffff;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.custom-navbar .navbar-brand {
+    color: #303030;
+    font-size: 40px;
+}
+
+.custom-navbar .navbar-brand .navbar-toggle {
+    background: #55acee;
+    padding: 4px 6px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.custom-navbar .nav li a {
+    color: #505050;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    padding-right: 20px;
+    padding-left: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-navbar .nav li a:hover {
+    background: #FFD321;
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-navbar .nav>li>a:focus {
+    background-color: transparent;
+    outline: none;
+}
+
+.custom-navbar .nav li.active>a {
+    background-color: #FFD321;
+}
+
+.custom-navbar .navbar-toggle {
+    border: none;
+    padding-top: 10px;
+}
+
+.custom-navbar .navbar-toggle .icon-bar {
+    background: #FFD321;
+    border-color: transparent;
+}
+
+.copyrights {
+    text-indent: -9999px;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+}
+
+@media(min-width:768px) {
+    .custom-navbar {
+        background: #ffffff;
+        padding: 14px;
+        border-bottom: 0;
+        background: 0 0;
     }
 
-
-
-
-
-    .case_box_item:hover .item_mask {
-        opacity: 0;
+    .custom-navbar.top-nav-collapse {
+        padding: 14px;
+        background: #fff;
+        border-bottom: 1px solid #eeeeee;
     }
-
-    .case_box_item:hover .case_box_item_img {
-        width: 100%;
-    }
+}
 
 
 
 
-} */
+/* 客户案例分页器修改 */
+.nav-tabs.nav-justified>li>a {
+    border-radius: 0;
+}
 
-@media (max-width: 639) {
-    .more_case{
-        width: 100%;
-    
-       
-    }
+.nav-tabs.nav-justified>.active>a,
+.nav-tabs.nav-justified>.active>a:hover,
+.nav-tabs.nav-justified>.active>a:focus {
+    border-bottom: 2px rgb(66, 66, 66) solid;
+    /* border: 0 0 2px 0 rgb(66, 66, 66) solid; */
+}
+
+.nav>li>a:hover,
+.nav>li>a:focus {
+    background: none;
+}
+
+.nav-tabs.nav-justified>.active>a,
+.nav-tabs.nav-justified>.active>a:hover,
+.nav-tabs.nav-justified>.active>a:focus {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.nav-tabs>li>a:hover {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.nav-tabs>li>a {
+    border: none;
+}
+
+.nav-tabs.nav-justified {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav-tabs.nav-justified>li>a {
+    border-bottom: none;
+}
+
+.case-tab {
+    color: rgb(163, 163, 163);
+    font-size: 16px;
+}
+
+.case-tab:hover {
+    color: #333;
 }
