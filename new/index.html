@@ -22,7 +22,9 @@
     <link rel="stylesheet" href="css/nivo_themes.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="./css/public.css" rel="stylesheet">
+    <link href="./css/fixedbox.css" rel="stylesheet">
     <script src="js/jquery-3.3.1.js"></script>
+
     <!-- 	<script>
 	var _hmt = _hmt || [];
 	(function() {
@@ -35,7 +37,34 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+    <script src="./js/fixedbox.js"></script>
+    <div class="fixed-box" id="fixed-box">
+        <div class="phone-box contect-way clear" id="phone-box">
+            <div class="fl align-center">
+                <i class="fa fa-mobile" aria-hidden="true" style="font-size:24px;"></i>
+                <p>业务沟通</p>
+            </div>
+            <div class="fl collpase-box">
+                188XXXXXXXX
+            </div>
 
+        </div>
+        <div class="wechat-box contect-way">
+            <div class="align-center">
+                <i class="fa fa-weixin" aria-hidden="true"></i>
+                <p>微信咨询</p>
+            </div>
+            <div class="qr-code">
+                <img src="images/Wechatcode.jpeg">
+            </div>
+        </div>
+        <div class="online-box contect-way">
+            <div class="align-center">
+                <i class="fa fa-pencil" aria-hidden="true"></i>
+                <p>在线留言</p>
+            </div>
+        </div>
+    </div>
     <!-- navigation section -->
     <section class="navbar navbar-fixed-top custom-navbar" role="navigation">
         <div class="container">
@@ -46,121 +75,121 @@
 				<span class="icon icon-bar"></span>
 				<span class="icon icon-bar"></span>
 			</button>
-			<a href="#" class="navbar-brand"><span class="bold"></span></a>
-		</div>
-		<div class="collapse navbar-collapse">
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#home" class="smoothScroll"> 主页</a></li>
-				<li><a href="#about" class="smoothScroll"> 服务</a></li>
-				<li><a href="#portfolio" class="smoothScroll"> 成功案例</a></li>
-				<li><a href="#team" class="smoothScroll"> 关于西柚</a></li>
-				<li><a href="#contact" class="smoothScroll"> 联系我们</a></li>
-				<li><a href="#brand" class="smoothScroll"> 合作伙伴</a></li>
-			</ul>
-		</div>
-	</div>
-</section>
-<!-- home section -->
-<section id="home">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 col-sm-12">
-				
-				<h3><span class="bold">
+                <a href="#" class="navbar-brand"><span class="bold"></span></a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home" class="smoothScroll"> 主页</a></li>
+                    <li><a href="#about" class="smoothScroll"> 服务</a></li>
+                    <li><a href="#portfolio" class="smoothScroll"> 成功案例</a></li>
+                    <li><a href="#team" class="smoothScroll"> 关于西柚</a></li>
+                    <li><a href="#contact" class="smoothScroll"> 联系我们</a></li>
+                    <li><a href="#brand" class="smoothScroll"> 合作伙伴</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- home section -->
+    <section id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+
+                    <h3><span class="bold">
 					<img src="fonts/position.png" style="width: 28px;"> 杭州
 				</span></h3>
-        <br>
-				<h1 class="heading">杭州西柚科技有限公司</h1>
-				<a href="https://www.xiyoukeji.com/APPH5%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7%E5%BC%80%E5%8F%91-%E6%9D%AD%E5%B7%9E%E8%A5%BF%E6%9F%9A%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8.pdf" class="smoothScroll btn btn-default">软件外包整体解决方案</a>
-			</div>
-		</div>
-	</div>		
-</section>
-<!-- about section -->
-<section id="about">
-	<!-- 服务模块 -->
-	<div class="container">
-      	<!-- 服务-服务与支持 -->		
-		<div class="row" style="margin-bottom: 100px">
-			<!-- 标题 -->
-			<div class="col-md-12 col-sm-12 text-center">
-				<h2 class="bold">服务与支持</h2>
-        		<!-- 我是一根很短的黄线 -->
-        		<HR width="30px" style="border:2px solid #FFD321;border-radius: 3px">
-				<h2 class="subheading">专注定制开发</h2>
-			</div>
-     		 <!-- 服务项1 -->
-			<div class="col-lg-3 col-md-3 col-sm-3 wow fadeInUp animated text-center" data-wow-delay="0.1s">
-				<img src="fonts/web@2x.png">
-				<h3 class="fa_head bold">网站定制</h3>
-				<p class="fa_content">企业官网 电子商城 移动端H5</p>
-			</div>
-     		 <!-- 服务项2 -->
-			<div class="col-lg-3 col-md-3 col-sm-3 wow fadeInUp animated text-center" data-wow-delay="0.2s">
-				<img src="fonts/app@2x.png">
-				<h3 class="fa_head bold">APP开发</h3>
-				<p class="fa_content">iOS/Android系统原生开发<br>掌握终端智能</p>
-			</div>
-			<!-- 服务项3 -->
-			<div class="col-lg-3 col-md-3 col-sm-3 wow fadeInUp animated text-center" data-wow-delay="0.3s">
-				<img src="fonts/xcx@2x.png">
-				<h3 class="fa_head bold">微信二次开发</h3>
-				<p class="fa_content">玩转小程序/公众号<br>速成流量大咖</p>
-			</div>
-      		<!-- 服务项4 -->
-      		<div class="col-lg-3 col-md-3 col-sm-3 wow fadeInUp animated text-center" data-wow-delay="0.4s">
-       			<img src="fonts/h5@2x.png">
-          		<h3 class="fa_head bold">移动端H5开发</h3>
-        	  	<p class="fa_content">酷炫动画 网页小游戏 手机官网</p>
-      		</div>
-    	</div>
-    	<!-- 换行 -->
-		<br>
-   		<!-- 服务-业务流程 -->
-		<div class="row" style="margin-bottom: 50px">
-      		<!-- 标题 -->
-			<div class="col-md-12 col-sm-12 text-center">
-				<h2 class="bold">业务流程</h2>
-        		<!-- 我是一根很短的黄线 -->
-        		<HR width="30px" style="border:2px solid #FFD321;border-radius: 3px">
-				<h2 class="subheading">注重过程管控</h2>
-			</div>	
-    		<!-- 流程盒子 -->
-    		<div id="process" class="wow fadeInUp animated" data-wow-delay="0.2s">
-      			<!-- 流程1 -->
-				<div class="col-lg-2 col-md-2 col-sm-2 wow fadeInUp animated text-center" data-wow-delay="0.2s">
-					<img src="fonts/step1@2x.png" style="">
-					<h3 class="fa_head bold">需求沟通</h3>
-				</div>
-     			<!-- 流程2 -->
-				<div class="col-lg-2 col-md-2 col-sm-2  wow fadeInUp animated text-center" data-wow-delay="0.2s">
-					<img src="fonts/step2@2x.png">
-					<h3 class="fa_head bold">方案设计</h3>
-				</div>
-      			<!-- 流程3 -->
-				<div class="col-lg-2 col-md-2 col-sm-2 wow fadeInUp animated text-center" data-wow-delay="0.2s">
-					<img src="fonts/step3@2x.png">
-					<h3 class="fa_head bold">程式开发</h3>
-				</div>
-     			 <!-- 流程4 -->
-				<div class="col-lg-2 col-md-2 col-sm-2 wow fadeInUp animated text-center" data-wow-delay="0.2s">
-					<img src="fonts/step4@2x.png">
-					<h3 class="fa_head bold">软件测试</h3>
-				</div>
-     			 <!-- 流程5 -->
-				<div class="col-lg-2 col-md-2 col-sm-2 wow fadeInUp animated text-center" data-wow-delay="0.2s">
-					<img src="fonts/step5@2x.png">
-					<h3 class="fa_head bold">项目交付</h3>
-				</div>
-      			<!-- 流程6 -->
-				<div class="col-lg-2 col-md-2 col-sm-2 wow fadeInUp animated text-center" data-wow-delay="0.2s">
-					<img src="fonts/step6@2x.png">
-					<h3 class="fa_head bold">限期保修</h3>
-      			</div>
-			</div>
-		</div>
-	</div>	
-</section>
+                    <br>
+                    <h1 class="heading">杭州西柚科技有限公司</h1>
+                    <a href="https://www.xiyoukeji.com/APPH5%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7%E5%BC%80%E5%8F%91-%E6%9D%AD%E5%B7%9E%E8%A5%BF%E6%9F%9A%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8.pdf" class="smoothScroll btn btn-default">软件外包整体解决方案</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about section -->
+    <section id="about">
+        <!-- 服务模块 -->
+        <div class="container">
+            <!-- 服务-服务与支持 -->
+            <div class="row" style="margin-bottom: 100px">
+                <!-- 标题 -->
+                <div class="col-md-12 col-sm-12 text-center">
+                    <h2 class="bold">服务与支持</h2>
+                    <!-- 我是一根很短的黄线 -->
+                    <HR width="30px" style="border:2px solid #FFD321;border-radius: 3px">
+                    <h2 class="subheading">专注定制开发</h2>
+                </div>
+                <!-- 服务项1 -->
+                <div class="col-lg-3 col-md-3 col-sm-3 wow fadeInUp animated text-center" data-wow-delay="0.1s">
+                    <img src="fonts/web@2x.png">
+                    <h3 class="fa_head bold">网站定制</h3>
+                    <p class="fa_content">企业官网 电子商城 移动端H5</p>
+                </div>
+                <!-- 服务项2 -->
+                <div class="col-lg-3 col-md-3 col-sm-3 wow fadeInUp animated text-center" data-wow-delay="0.2s">
+                    <img src="fonts/app@2x.png">
+                    <h3 class="fa_head bold">APP开发</h3>
+                    <p class="fa_content">iOS/Android系统原生开发<br>掌握终端智能</p>
+                </div>
+                <!-- 服务项3 -->
+                <div class="col-lg-3 col-md-3 col-sm-3 wow fadeInUp animated text-center" data-wow-delay="0.3s">
+                    <img src="fonts/xcx@2x.png">
+                    <h3 class="fa_head bold">微信二次开发</h3>
+                    <p class="fa_content">玩转小程序/公众号<br>速成流量大咖</p>
+                </div>
+                <!-- 服务项4 -->
+                <div class="col-lg-3 col-md-3 col-sm-3 wow fadeInUp animated text-center" data-wow-delay="0.4s">
+                    <img src="fonts/h5@2x.png">
+                    <h3 class="fa_head bold">移动端H5开发</h3>
+                    <p class="fa_content">酷炫动画 网页小游戏 手机官网</p>
+                </div>
+            </div>
+            <!-- 换行 -->
+            <br>
+            <!-- 服务-业务流程 -->
+            <div class="row" style="margin-bottom: 50px">
+                <!-- 标题 -->
+                <div class="col-md-12 col-sm-12 text-center">
+                    <h2 class="bold">业务流程</h2>
+                    <!-- 我是一根很短的黄线 -->
+                    <HR width="30px" style="border:2px solid #FFD321;border-radius: 3px">
+                    <h2 class="subheading">注重过程管控</h2>
+                </div>
+                <!-- 流程盒子 -->
+                <div id="process" class="wow fadeInUp animated" data-wow-delay="0.2s">
+                    <!-- 流程1 -->
+                    <div class="col-lg-2 col-md-2 col-sm-2 wow fadeInUp animated text-center" data-wow-delay="0.2s">
+                        <img src="fonts/step1@2x.png" style="">
+                        <h3 class="fa_head bold">需求沟通</h3>
+                    </div>
+                    <!-- 流程2 -->
+                    <div class="col-lg-2 col-md-2 col-sm-2  wow fadeInUp animated text-center" data-wow-delay="0.2s">
+                        <img src="fonts/step2@2x.png">
+                        <h3 class="fa_head bold">方案设计</h3>
+                    </div>
+                    <!-- 流程3 -->
+                    <div class="col-lg-2 col-md-2 col-sm-2 wow fadeInUp animated text-center" data-wow-delay="0.2s">
+                        <img src="fonts/step3@2x.png">
+                        <h3 class="fa_head bold">程式开发</h3>
+                    </div>
+                    <!-- 流程4 -->
+                    <div class="col-lg-2 col-md-2 col-sm-2 wow fadeInUp animated text-center" data-wow-delay="0.2s">
+                        <img src="fonts/step4@2x.png">
+                        <h3 class="fa_head bold">软件测试</h3>
+                    </div>
+                    <!-- 流程5 -->
+                    <div class="col-lg-2 col-md-2 col-sm-2 wow fadeInUp animated text-center" data-wow-delay="0.2s">
+                        <img src="fonts/step5@2x.png">
+                        <h3 class="fa_head bold">项目交付</h3>
+                    </div>
+                    <!-- 流程6 -->
+                    <div class="col-lg-2 col-md-2 col-sm-2 wow fadeInUp animated text-center" data-wow-delay="0.2s">
+                        <img src="fonts/step6@2x.png">
+                        <h3 class="fa_head bold">限期保修</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- portfolio section -->
     <div id="portfolio">
@@ -343,16 +372,16 @@
     <section id="team">
         <div class="container">
             <!-- 服务-业务流程 -->
-		<div class="row" style="margin-bottom: 50px">
-      		<!-- 标题 -->
-			<div class="col-md-12 col-sm-12 text-center">
-				<h2 class="bold">关于西柚</h2>
-        		<!-- 我是一根很短的黄线 -->
-        		<HR width="30px" style="border:2px solid #FFD321;border-radius: 3px">
-				<p>&nbsp; &nbsp; &nbsp; &nbsp; 西柚科技成立于2015年，是一支从浙大走出的创业团队，专注软件定制开发，为各行各业提供优质的全栈式开发和一站式服务。在众多柚子的努力下，三年之间我们的代码已经遍布医疗、教育、通讯、零售、金融、法律、政府等多个行业，我们坚持给予客户合理建议，坚持要有详细的设计文档才能开发，坚持经过内部测试才能交付，以工匠之心为客户打造每一款产品。
-				</p>
-			</div>
-				<!-- 图片1 -->
+            <div class="row" style="margin-bottom: 50px">
+                <!-- 标题 -->
+                <div class="col-md-12 col-sm-12 text-center">
+                    <h2 class="bold">关于西柚</h2>
+                    <!-- 我是一根很短的黄线 -->
+                    <HR width="30px" style="border:2px solid #FFD321;border-radius: 3px">
+                    <p>&nbsp; &nbsp; &nbsp; &nbsp; 西柚科技成立于2015年，是一支从浙大走出的创业团队，专注软件定制开发，为各行各业提供优质的全栈式开发和一站式服务。在众多柚子的努力下，三年之间我们的代码已经遍布医疗、教育、通讯、零售、金融、法律、政府等多个行业，我们坚持给予客户合理建议，坚持要有详细的设计文档才能开发，坚持经过内部测试才能交付，以工匠之心为客户打造每一款产品。
+                    </p>
+                </div>
+                <!-- 图片1 -->
                 <div class="col-md-4 col-sm-4 col-xs-6 wow fadeIn animated" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: fadeIn;">
                     <div class="team-wrapper">
                         <img src="images/team/team1.jpg" class="img-responsive" alt="team img">
