@@ -73,6 +73,11 @@
     padding-bottom: 30px;
 }
 
+.custom-navbar.top-nav-collapse {
+    padding: 14px;
+    background: #fff;
+    border-bottom: 1px solid #eeeeee;
+}
 
 
 /* 屏幕尺寸大于800px时候有动画 */
