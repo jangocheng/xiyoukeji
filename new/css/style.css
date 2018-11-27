@@ -499,3 +499,16 @@ footer {
         padding-bottom: 40px;
     }
 }
+
+/* 查看更多css */
+.look_more{
+    color: #FFD321;
+    position: absolute;
+    right: 130px;
+}
+.look_more:hover{
+    color: #FFD321;
+}
+.look_more i{
+    padding-left: 5px;
+}
