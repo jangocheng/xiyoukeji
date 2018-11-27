@@ -22,6 +22,20 @@
     overflow: hidden;
 }
 
+.top-box {
+    position: absolute;
+    right: 0;
+    top: -62px;
+    width: 68px;
+    height: 60px;
+}
+
+.top-box a {
+    color: #eee;
+    margin-top: 8px;
+    display: block;
+}
+
 .phone-box:hover {
     width: 180px;
 }
@@ -58,7 +72,7 @@
 }
 
 .wechat-box:hover .qr-code {
-    display: inline-block;
+    right: 68px;
 }
 
 .wechat-box .qr-code {
@@ -68,11 +82,12 @@
     background: #fff;
     border-radius: 5px;
     position: absolute;
-    right: 68px;
-    top: 0;
-    display: none;
+    right: -140px;
+    top: -40px;
+    /* display: none; */
     box-shadow: 0 0 5px #ddd;
-    z-index: 3000;
+    z-index: -5;
+    transition: right 0.5s;
 }
 
 .wechat-box .qr-code>img {
