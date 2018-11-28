@@ -126,4 +126,10 @@
     .online-box .collpase-box {
         line-height: 30px;
     }
+    .online-box .collpase-box {
+        display: none;
+    }
+    .online-box:hover .collpase-box {
+        display: inline-block;
+    }
 }
