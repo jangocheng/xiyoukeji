@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- SITE TITLE -->
+	<title>杭州西柚科技有限公司</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="杭州西柚科技有限公司,西柚科技,软件外包,app开发,网站开发,HTML5,微信开发,iOS开发,Android开发,UI设计,驻场开发,浙江大学,手游开发,Java开发">
+	<meta name="description" content="西柚科技是一支拥有多年软件外包经验的资深团队，业务范围涵盖软件开发、UI设计、工程技术以及售后服务和市场推广等多个领域。公司依托于浙江大学高新技术人才，始终秉承“求是”的服务理念，凭借自己深厚的技术实力背景、丰富的项目策划经验和完善的运营模式，致力于为众多的企业、创业 者提供最优质的APP移动应用开发和互联网整体解决方案。">
+	<meta name="author" content="Bootstrap中文网">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <link href="./images/logo120.jpg" rel="apple-touch-icon"> 
+	<!-- STYLESHEET CSS FILES -->
+	<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/product.css">
+	<link rel="stylesheet" href="css/photoswipe.css">
+	<link rel="stylesheet" href="default-skin/default-skin.css">
+	<script src="js/photoswipe.min.js"></script>
+	<script src="js/photoswipe-ui-default.min.js"></script>
+</head>
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+	<!-- navigation section -->
+<section class="navbar navbar-fixed-top custom-navbar top-nav-collapse" role="navigation">
+	<div class="container">
+		<img style="height: 50px;float: left;" src="./images/logo_xs.gif" />
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+			</button>
+			<a href="#" class="navbar-brand"><span class="bold"></span></a>
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="index.html#home" class="smoothScroll"> 主页</a></li>
+				<li><a href="index.html#about" class="smoothScroll"> 关于我们</a></li>
+				<li class="active"><a class="smoothScroll"> 客户案例</a></li>
+				<li><a href="index.html#team" class="smoothScroll"> 团队风采</a></li>
+				<li><a href="index.html#contact" class="smoothScroll"> 联系我们</a></li>
+				<li><a href="index.html#brand" class="smoothScroll"> 合作伙伴</a></li>
+			</ul>
+		</div>
+	</div>
+</section>
+<section class="product-box">
+	<div class="container">
+		<div class="media">
+			<a href="" class="media-left">
+				<img class="app-icon img-thumbnail" src="images/Icon-512.png" alt="">
+			</a>
+			<div class="media-body">
+				<h3 class="media-heading">串串-一个满足年轻人好奇心,好玩,搞笑的投票社区</h3>
+				<p class="text-muted">Hangzhou liangge Technologyies Co .Ltd</p>
+				<a href="" class="btn btn-primary" style="margin-right: 20px;margin-bottom: 10px;">
+					<i class="fa fa-fw fa-apple" style="font-size:22px;"></i>App Store下载
+				</a>
+				<a href="" class="btn btn-success" style="margin-bottom: 10px;">
+					<i class="fa fa-fw fa-android" style="font-size:22px;"></i>Android下载
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="page-header">
+		 	<h4>产品详情展示</h4>
+		</div>
+		<div class="scroll-x nowrap well">
+			<div class="picture-box">
+				<img src="images/P1.png" alt="">
+			</div>
+			<div class="picture-box">
+				<img src="images/P2.png" alt="">
+			</div>
+			<div class="picture-box">
+				<img src="images/P3.png" alt="">
+			</div>
+			<div class="picture-box">
+				<img src="images/P4.png" alt="">
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div id="pswp" class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <!-- <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button> -->
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- JAVASCRIPT JS FILES -->
+<script src="//cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script>
+$('.picture-box').bind("touchup click",function(e){
+	e.preventDefault();
+	var $this = $(this);
+	var pswpElement = document.getElementById("pswp");
+	var width = $(this).width(), height = $(this).height(),
+		radio = width / height;
+		MaxWidth = $(window).width(), MaxHeight = $(window).height()-90;
+	if(height > MaxHeight){
+		height = MaxHeight;
+		width = height * radio;
+	}
+	// build items array
+	var items = [
+	    {
+	        src: 'images/P1.png',
+	        w: width,
+        	h: height
+	    },
+	    {
+	        src: 'images/P2.png',
+	        w: width,
+        	h: height
+	    },
+	    {
+	        src: 'images/P3.png',
+	        w: width,
+        	h: height
+	    },
+	    {
+	        src: 'images/P4.png',
+	        w: width,
+        	h: height
+	    }
+	];
+	// define options (if needed)
+	var options = {
+	    // optionName: 'option value'
+	    // for example:
+	    index: $this.index // start at first slide
+	};
+	// Initializes and opens PhotoSwipe
+	var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+	gallery.init();
+})
+</script>
+</body>
+</html>
