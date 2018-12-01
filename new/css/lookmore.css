@@ -28,16 +28,16 @@
     display: inline-block;
     /* padding: 0px 10px; */
     margin-top: 20px;
-
     padding: 10px;
     border-radius: 5px;
-    background: rgba(245, 245, 245, 1)
+    background: rgba(245, 245, 245, 1);
+    
 }
 
 .more_smallcase {
     width: 100%;
-    height: 100%;
-    overflow: hidden;
+    /* height: 100%; */
+    /* overflow: hidden; */
 
 
 }
@@ -50,21 +50,33 @@
     text-decoration: none
 }
 
+.content {
+    height: 180px;
+    /* overflow: hidden; */
+}
+
 .content h4 {
     color: rgb(28, 23, 59);
-    line-height: 60px;
+    line-height: 40px;
+
 }
 
 .content p {
     color: rgb(143, 143, 143);
     font-size: 14px;
-    padding-bottom: 20px;
+    /* padding-bottom: px; */
+    /* white-space: nowrap; */
+    /* text-overflow: ellipsis; */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
 }
 
 .case-img {
     overflow: hidden;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
 
 }
 
@@ -96,6 +108,7 @@
     .more_case {
         width: 25%;
         margin-left: 40px;
+        height: 400px;
 
     }
 }
@@ -128,6 +141,7 @@
         width: 40%;
         margin-left: 40px;
         overflow: hidden;
+        /* height: 340px; */
     }
 
 
@@ -140,12 +154,12 @@
     }
 }
 
-@media (max-width: 639) {
+@media (max-width: 639px) {
     .more_case {
         width: 100%;
-
-
+        /* height: 400px;; */
     }
+
 }
 
 
