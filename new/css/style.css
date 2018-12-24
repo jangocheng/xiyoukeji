@@ -345,9 +345,10 @@ p {
 }
 #brand .companyLogo {
     display: block;
-    width: 210px;
+    width: 80px;
+    height: 40px;
     max-width: 100%;
-    margin: 20px auto;
+    margin: 20px 10px;
 }
 
 /* contact section */
