@@ -21,22 +21,31 @@
     <link rel="stylesheet" href="css/nivo-lightbox.css">
     <link rel="stylesheet" href="css/nivo_themes.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="./css/public.css" >
+    <link rel="stylesheet" href="./css/public.css">
     <link rel="stylesheet" href="./css/fixedbox.css">
     <script src="js/jquery-3.3.1.js"></script>
 
     <!-- 百度商桥 -->
     <script>
-      var _hmt = _hmt || [];
-      (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?dad4f2d190cd38303a722500b59b0c3d";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-      })();
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?dad4f2d190cd38303a722500b59b0c3d";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
     </script>
 </head>
+
 <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+    <div class="gy-dialog" id="firstpage-dialog">
+        <div class="gy-dialog-box">
+            <h5>春节放假通知</h5>
+            <img src="./images/guanbi@2x(1).png" class="gy-close" id="close-dialog">
+            <img src="./images/newyear.jpeg" class="gy-dialog-img">
+        </div>
+
+    </div>
     <div class="fixed-box" id="fixed-box">
         <div class="top-box contect-way" id="top-box">
             <div class="align-center">
@@ -242,7 +251,7 @@
                                 寸草心
                             </p>
                             <p class="text_intro">
-                                 太原市寸草心便利主营业务为经营超市及连锁便利店，目前已有50多家门店。我们为其量身打造进销存系统：收银端、商户端、管理端、app和小程序，使其真正实现云收银、云库存，在当地激烈竞争中跻身前列
+                                太原市寸草心便利主营业务为经营超市及连锁便利店，目前已有50多家门店。我们为其量身打造进销存系统：收银端、商户端、管理端、app和小程序，使其真正实现云收银、云库存，在当地激烈竞争中跻身前列
                             </p>
                         </div>
                         <div class="item_mask"></div>
@@ -811,6 +820,7 @@
     <script src="js/wow.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/smoothscroll.min.js"></script>
+    <script src="js/firstpage.js"></script>
     <script>
         $(function() {
             $('.smoothScroll').bind('click', function() {
