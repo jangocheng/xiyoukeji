@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background: #f8f8f8;
+}
+
+/* 标题样式 */
+.big-title::after {
+    clear: both;
+    display: block;
+    content: "";
+  }
+  .big-title {
+    margin-top: 10px;
+  }
+  .big-title > h3 {
+    font-size: 16px;
+    color: #333333;
+    font-weight: 600;
+    line-height: 40px;
+    /* margin-left: 5%; */
+    padding: 0 5%;
+  }
+  .big-title > p {
+    font-size: 12px;
+    color: #333333;
+    line-height: 20px;
+  }
+  .icon-shixiangyoujiantou- {
+    font-size: 26px;
+    color: #f1b84b;
+    position: absolute;
+    left: 0;
+    /* float: left; */
+    text-align:right;
+  }
+
+  /* 小圈圈+标题+内容 的样式 */
+  .last-list {
+    margin-top: 20px;
+    padding-right: 5%;
+  }
+  .last-list img {
+    width: 1.4%;
+    height: 1.4%;
+    /* float: left; */
+    vertical-align: middle;
+    padding-left: 2%;
+    /* position: absolute; */
+  }
+  .last-list span {
+    color: #666666;
+    font-size: 14px;
+    line-height: 9px;
+    margin-top: 20px;
+    vertical-align: middle;
+    /* margin-left: 2%; */
+  }
+  .last-list p {
+    margin-top: 10px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #666666;
+    padding-left: 5%;
+  }
+
+/* 页面padding公用样式 */
+  .pd-st{
+      padding: 20px 5%;
+  }
