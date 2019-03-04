@@ -13,8 +13,10 @@
         </div>
         <div>
             <div v-for="item in lastList" :key="item.id" class="last-list">
-                <img src="../../../static/images/icons/oval@2x.png" alt="">
-                <span>{{item.title}}</span>
+                <div class='last-list-title'>
+                    <img src="../../../static/images/icons/oval@2x.png" alt="" >
+                    <span>{{item.title}}</span>
+                </div>
                 <p>{{item.con}}</p>
             </div>
         </div>
@@ -23,55 +25,73 @@
             <h3>覆盖行业</h3>
             <p style="padding:0 5%;">开发对接成熟第三方直播平台，降低直播平台开发的技术门槛。用最少的开发成本满足客户建设直播平台的需求。</p>
         </div>
-        <!-- <div class="icon-title">
+        <div class="icon-title">
             <ul>
                 <li>
-                    <img src="../../../static/images/icons/industry1@2x.png" alt="">
+                    <img src="../../../static/images/icons/live1@2x.png" alt="">
                     <span>电商直播</span>
                 </li>
                 <li>
-                    <img src="../../../static/images/icons/industry4@2x.png" alt="">
+                    <img src="../../../static/images/icons/live4@2x.png" alt="">
                     <span>展会直播</span>
                 </li>
                 <li>
-                    <img src="../../../static/images/icons/industry7@2x.png" alt="">
+                    <img src="../../../static/images/icons/live7@2x.png" alt="">
                     <span>金融直播</span>
                 </li>
                 <li>
-                    <img src="../../../static/images/icons/industry7@2x.png" alt="">
+                    <img src="../../../static/images/icons/live10@2x.png" alt="">
                     <span>竞拍直播</span>
                 </li>
             </ul>
             <ul>
                 <li>
-                    <img src="../../../static/images/icons/industry12@2x.png" alt="">
+                    <img src="../../../static/images/icons/live2@2x.png" alt="">
                     <span>教育直播</span>
                 </li>
                 <li>
-                    <img src="../../../static/images/icons/industry5@2x.png" alt="">
+                    <img src="../../../static/images/icons/live5@2x.png" alt="">
                     <span>游戏直播</span>
                 </li>
                 <li>
-                    <img src="../../../static/images/icons/industry8@2x.png" alt="">
+                    <img src="../../../static/images/icons/live8@2x.png" alt="">
                     <span>企业直播</span>
                 </li>
             </ul>
             <ul>
                 <li>
-                    <img src="../../../static/images/icons/industry3@2x.png" alt="">
+                    <img src="../../../static/images/icons/industry6@2x.png" alt="">
                     <span>旅游直播</span>
                 </li>
                 <li>
-                    <img src="../../../static/images/icons/industry6@2x.png" alt="">
+                    <img src="../../../static/images/icons/live6@2x.png" alt="">
                     <span>社交直播</span>
                 </li>
                 <li>
-                    <img src="../../../static/images/icons/industry9@2x.png" alt="">
+                    <img src="../../../static/images/icons/live9@2x.png" alt="">
                     <span>医疗直播</span>
                 </li>
             </ul>
-        </div> -->
-
+        </div>
+        <div class="big-title" style="margin-top:40px">
+            <i class="iconfont icon-shixiangyoujiantou-"></i>
+            <h3>产品介绍</h3>
+            <p style="padding-left:5%;">包含PC端, APP端(安卓+iOS), 微信端, 手机wap端</p>
+        </div>
+        <div class="bottom-box">
+            <div class="last-list">
+                <div class='last-list-title'>
+                    <img src="../../../static/images/icons/oval@2x.png" alt="">
+                    <span>娃娃抓抓</span>
+                </div>
+                <p>一款真实在线远程抓娃娃机，手机遥控真实娃娃机。种类丰富，高质量玩偶任你挑选。抓到的娃娃直接邮寄到您家。</p>
+            </div>
+            <div class='my-pic'>
+                <img src="../../../static/images/img/zhibo11.png" alt="" />
+                <img src="../../../static/images/img/zhibo22.png" alt="" />
+                <img src="../../../static/images/img/zhibo33.png" alt="" />
+            </div>
+        </div>
     </div>
 </template>
 
@@ -99,10 +119,15 @@
 
 <style scoped>
 .zhibo{
-    padding-bottom: 500px;
+    padding-bottom: 20px;
 }
 .jishu-img{
     width: 100%;
+}
+.icon-title::after{
+  display: block;
+  clear: both;
+  content: "";  
 }
 .icon-title{
     padding: 0 5%;
@@ -125,10 +150,17 @@
 .icon-title ul {
   width: 33.3%;
   float: left;
+  /* text-align: center; */
 }
 .icon-title img {
   width: 14.1%;
   padding-right: 5%;
   vertical-align: middle;
+}
+.my-pic{
+    padding: 0 5%;
+}
+.my-pic>img{
+    width: 32.5%;
 }
 </style>

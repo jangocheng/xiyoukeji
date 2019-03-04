@@ -45,24 +45,27 @@ body {
   .last-list {
     margin-top: 20px;
     padding-right: 5%;
+    width: 100%;
   }
-  .last-list img {
+  .last-list>.last-list-title::after{
+    display: block;
+    content: '';
+    clear: both;
+  }
+  .last-list>.last-list-title>img {
     width: 1.4%;
-    height: 1.4%;
-    /* float: left; */
+    /* height: 1.4%; */
     vertical-align: middle;
-    padding-left: 2%;
-    /* position: absolute; */
+    padding-left: 5%;
   }
-  .last-list span {
+  .last-list>.last-list-title>span {
     color: #666666;
     font-size: 14px;
     line-height: 9px;
     margin-top: 20px;
     vertical-align: middle;
-    /* margin-left: 2%; */
   }
-  .last-list p {
+  .last-list>p {
     margin-top: 10px;
     line-height: 20px;
     font-size: 12px;

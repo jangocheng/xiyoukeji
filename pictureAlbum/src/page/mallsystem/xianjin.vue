@@ -92,8 +92,10 @@
         </div>
         <div style="margin-top:-20px;">
             <div v-for="item in lastList" :key="item.id" class="last-list">
-                <img src="../../../static/images/icons/oval@2x.png" alt="">
-                <span>{{item.title}}</span>
+              <div class='last-list-title'>
+                  <img src="../../../static/images/icons/oval@2x.png" alt="">
+                  <span>{{item.title}}</span>
+              </div>
                 <p>{{item.con}}</p>
             </div>
         </div>

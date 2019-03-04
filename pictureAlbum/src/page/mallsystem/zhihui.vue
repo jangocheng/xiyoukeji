@@ -81,8 +81,10 @@
             </div>
             <div class="last-box">
                 <div class='last-list'>
-                    <img src="../../../static/images/icons/oval@2x.png" alt="" />
-                    <h4>患者端</h4>
+                    <div class='last-list-title'>
+                        <img src="../../../static/images/icons/oval@2x.png" alt="" />
+                        <h4>患者端</h4>
+                    </div>
                     <p>在线问诊，呼吸科医生全程呵护；专属医生，线下专家
                         线上服务；脱敏管理，再也不会忘记打针时间啦！</p>
                     <div style="margin-top:15px;">
@@ -94,8 +96,10 @@
             </div>
             <div class="last-box" style="margin-top:27px;">
                 <div class='last-list'>
-                    <img src="../../../static/images/icons/oval@2x.png" alt="" />
-                    <h4>患者端</h4>
+                    <div class='last-list-title'>
+                        <img src="../../../static/images/icons/oval@2x.png" alt="" />
+                        <h4>患者端</h4>
+                    </div>
                     <p>在线问诊，呼吸科医生全程呵护；专属医生，线下专家
                         线上服务；脱敏管理，再也不会忘记打针时间啦！</p>
                     <div style="margin-top:15px;text-align:center;">
