@@ -1,45 +1,57 @@
 <template>
-    <div class="zaixian">
-        <div v-for="item in listData" :key="item.id" class="list-con">
-            <div class="title-box">
-                <img :src="item.imgUrl" alt="">
-                <span>{{item.title}}</span>
-            </div>
-            <div v-for="item in item.container" :key="item.id" class="list-detail">
-                <h4>{{item.smallTitle}}</h4>
-                <p>{{item.con}}</p>
-            </div>
+  <div>
+    <DropDown :titleName="titleName" :isClose="isClose" v-on:isRotate="isRotate"></DropDown>
+    <div class="zaixian" style="background:white;margin-top:20px" @click="handleBlur">
+      <div v-for="item in listData" :key="item.id" class="list-con">
+        <div class="title-box">
+          <img :src="item.imgUrl" alt="">
+          <span>{{item.title}}</span>
         </div>
-        <div class="big-title" style="margin-top:40px">
-            <i class="iconfont icon-shixiangyoujiantou-"></i>
-            <h3>技术架构</h3>
+        <div v-for="item in item.container" :key="item.id" class="list-detail">
+          <h4>{{item.smallTitle}}</h4>
+          <p>{{item.con}}</p>
         </div>
-        <img src="../../../static/images/img/Group 6@2x.png" alt="" class="jiagou-img">
-        <div class="big-title" style="margin-top:30px">
-            <i class="iconfont icon-shixiangyoujiantou-"></i>
-            <h3>案例展示</h3>
+      </div>
+      <div class="big-title" style="margin-top:40px">
+        <i class="iconfont icon-shixiangyoujiantou-"></i>
+        <h3>技术架构</h3>
+      </div>
+      <img v-lazy='imgBox.imgUrl1' alt="" class="jiagou-img">
+      <div class="big-title" style="margin-top:30px">
+        <i class="iconfont icon-shixiangyoujiantou-"></i>
+        <h3>案例展示</h3>
+      </div>
+      <div class="bottom-box">
+        <div class="last-list" style="margin-top:20px;">
+          <div class="last-list-title">
+            <img src="../../../static/images/icons/oval@2x.png" alt="">
+            <span>快问学生端</span>
+          </div>
         </div>
-        <div class="bottom-box">
-            <div class="last-list" style="margin-top:20px;">
-                <div class='last-list-title'>
-                    <img src="../../../static/images/icons/oval@2x.png" alt="" >
-                    <span>快问学生端</span>
-                </div>
-            </div>
-            <div class="img-box">
-                <img src="../../../static/images/img/case2@2x.png" alt="" />
-                <img src="../../../static/images/img/case1@2x.png" alt="" />
-                <img src="../../../static/images/img/case3@2x.png" alt="" />
-            </div>
+        <div class="img-box">
+          <img v-lazy='imgBox.imgUrl2' alt="">
+          <img v-lazy='imgBox.imgUrl3' alt="">
+          <img v-lazy='imgBox.imgUrl4' alt="">
         </div>
+      </div>
     </div>
+  </div>
 </template>
 
 <script>
+import DropDown from "../../components/dropdown";
 export default {
   name: "zaixian",
   data() {
     return {
+      imgBox: {
+        imgUrl1: "../../../static/images/img/Group6@2x.png",
+        imgUrl2: "../../../static/images/img/case2@2x.png",
+        imgUrl3: "../../../static/images/img/case1@2x.png",
+        imgUrl4: "../../../static/images/img/case3@2x.png"
+      },
+      titleName: "在线教育解决方案",
+      isClose: false,
       listData: [
         {
           id: 0,
@@ -154,17 +166,29 @@ export default {
         }
       ]
     };
+  },
+  components: {
+    DropDown
+  },
+  methods: {
+    handleBlur() {
+      this.isClose = true;
+    },
+    isRotate(rotate) {
+      if (rotate == false) {
+        this.isClose = false;
+      }
+    }
   }
 };
 </script>
 
 <style scoped>
-.img-box{
-    margin-top: 15px;
+.img-box {
+  margin-top: 15px;
 }
-.img-box img{
-    width: 32.5%;
-
+.img-box img {
+  width: 32.5%;
 }
 .jiagou-img {
   width: 100%;

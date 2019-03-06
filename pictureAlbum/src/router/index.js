@@ -74,7 +74,7 @@ export default new Router({
       component: Xiyoudata
     },
     {
-      path: '/',
+      path: '/zaixian',
       name: 'zaixian',
       component: Zaixian
     },

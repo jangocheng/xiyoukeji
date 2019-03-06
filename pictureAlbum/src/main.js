@@ -7,10 +7,11 @@ import App from './App'
 import './assets/style/reset.css'
 import './assets/style/border.css'
 import '@/style/index.css'
+import VueLazyload from 'vue-lazyload'
 FastClick.attach(document.body)
 
 Vue.config.productionTip = false
-
+Vue.use(VueLazyload)
 /* eslint-disable no-new */
 new Vue({
     router,

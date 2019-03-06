@@ -1,96 +1,101 @@
 <template>
-    <div class="shejiao">
-        <div class="head-con">
-            <div class="head-icon">
-                <img
-                    src="../../../static/images/icons/shejiao_icon1@2x.png"
-                    alt=""
-                    style="margin-top:10%;padding-bottom:5%;"
-                >
-                <h4>降低企业成本</h4>
-            </div>
-            <div class="head-icon">
-                <img src="../../../static/images/icons/shejiao_icon2@2x.png" alt="">
-                <h4>降低企业成本</h4>
-            </div>
-            <div class="head-icon">
-                <img src="../../../static/images/icons/shejiao_icon3@2x.png" alt="">
-                <h4>降低企业成本</h4>
-            </div>
-        </div>
-        <p class="head-p">
-            基于多种交友功能，为企业打造一站式交友平台及社区管理平台。
-            社交APP开发采用动态智能DNS掉线，快速重连机制，消息排重，持续重连直至到达。
-        </p>
-        <div class="big-title">
-            <i class="iconfont icon-shixiangyoujiantou-"></i>
-            <h3>覆盖行业</h3>
-            <p>社交系统覆盖多个行业，支持个性化定制需求</p>
-        </div>
-        <div class="icon-title">
-            <ul>
-                <li>
-                    <img src="../../../static/images/icons/industry1@2x.png" alt="">
-                    <span>金融行业</span>
-                </li>
-                <li>
+    <div>
+        <DropDown :titleName="titleName" :isClose="isClose" v-on:isRotate="isRotate"></DropDown>
+        <div class="shejiao" style="background:white;margin-top:20px" @click="handleBlur">
+            <div class="head-con">
+                <div class="head-icon">
                     <img
-                        src="../../../static/images/icons/industry4@2x.png"
+                        src="../../../static/images/icons/shejiao_icon1@2x.png"
                         alt=""
-                        style="margin-top:8px;"
+                        style="margin-top:10%;padding-bottom:5%;"
                     >
-                    <span>银行行业</span>
-                </li>
-                <li>
-                    <img src="../../../static/images/icons/industry7@2x.png" alt="">
-                    <span>医疗美容</span>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <img src="../../../static/images/icons/industry12@2x.png" alt="">
-                    <span>外卖行业</span>
-                </li>
-                <li>
-                    <img src="../../../static/images/icons/industry5@2x.png" alt="">
-                    <span>服装行业</span>
-                </li>
-                <li>
-                    <img src="../../../static/images/icons/industry8@2x.png" alt="">
-                    <span>餐饮行业</span>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <img src="../../../static/images/icons/industry3@2x.png" alt="">
-                    <span>地产行业</span>
-                </li>
-                <li>
-                    <img src="../../../static/images/icons/industry6@2x.png" alt="">
-                    <span>直播</span>
-                </li>
-                <li>
-                    <img src="../../../static/images/icons/industry9@2x.png" alt="">
-                    <span>机械行业</span>
-                </li>
-            </ul>
-        </div>
-        <div class="big-title" style="margin-top:40px;">
-            <i class="iconfont icon-shixiangyoujiantou-"></i>
-            <h3>场景应用</h3>
-        </div>
-        <div class="">
-            <div class='last-list'>
-                <div class='last-list-title'>
-                    <img src="../../../static/images/icons/oval@2x.png" alt="" />
-                    <h4>患者端</h4>
+                    <h4>降低企业成本</h4>
                 </div>
-                <p>在线问诊，呼吸科医生全程呵护；专属医生，线下专家
-                    线上服务；脱敏管理，再也不会忘记打针时间啦！</p>
-                <div style="margin-top:15px;">
-                    <img src="../../../static/images/img/shejiao01@2x.png" alt="" />
-                    <img src="../../../static/images/img/shejiao02@2x.png" alt="" />
-                    <img src="../../../static/images/img/shejiao03@2x.png" alt="" />
+                <div class="head-icon">
+                    <img src="../../../static/images/icons/shejiao_icon2@2x.png" alt="">
+                    <h4>降低企业成本</h4>
+                </div>
+                <div class="head-icon">
+                    <img src="../../../static/images/icons/shejiao_icon3@2x.png" alt="">
+                    <h4>降低企业成本</h4>
+                </div>
+            </div>
+            <p class="head-p">
+                基于多种交友功能，为企业打造一站式交友平台及社区管理平台。
+                社交APP开发采用动态智能DNS掉线，快速重连机制，消息排重，持续重连直至到达。
+            </p>
+            <div class="big-title">
+                <i class="iconfont icon-shixiangyoujiantou-"></i>
+                <h3>覆盖行业</h3>
+                <p>社交系统覆盖多个行业，支持个性化定制需求</p>
+            </div>
+            <div class="icon-title">
+                <ul>
+                    <li>
+                        <img src="../../../static/images/icons/industry1@2x.png" alt="">
+                        <span>金融行业</span>
+                    </li>
+                    <li>
+                        <img
+                            src="../../../static/images/icons/industry4@2x.png"
+                            alt=""
+                            style="margin-top:8px;"
+                        >
+                        <span>银行行业</span>
+                    </li>
+                    <li>
+                        <img src="../../../static/images/icons/industry7@2x.png" alt="">
+                        <span>医疗美容</span>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="../../../static/images/icons/industry12@2x.png" alt="">
+                        <span>外卖行业</span>
+                    </li>
+                    <li>
+                        <img src="../../../static/images/icons/industry5@2x.png" alt="">
+                        <span>服装行业</span>
+                    </li>
+                    <li>
+                        <img src="../../../static/images/icons/industry8@2x.png" alt="">
+                        <span>餐饮行业</span>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="../../../static/images/icons/industry3@2x.png" alt="">
+                        <span>地产行业</span>
+                    </li>
+                    <li>
+                        <img src="../../../static/images/icons/industry6@2x.png" alt="">
+                        <span>直播</span>
+                    </li>
+                    <li>
+                        <img src="../../../static/images/icons/industry9@2x.png" alt="">
+                        <span>机械行业</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="big-title" style="margin-top:40px;">
+                <i class="iconfont icon-shixiangyoujiantou-"></i>
+                <h3>场景应用</h3>
+            </div>
+            <div class="">
+                <div class="last-list">
+                    <div class="last-list-title">
+                        <img src="../../../static/images/icons/oval@2x.png" alt="">
+                        <h4>患者端</h4>
+                    </div>
+                    <p>
+                        在线问诊，呼吸科医生全程呵护；专属医生，线下专家
+                        线上服务；脱敏管理，再也不会忘记打针时间啦！
+                    </p>
+                    <div style="margin-top:15px;">
+                        <img v-lazy="imgBox.imgUrl1" alt="">
+                        <img v-lazy="imgBox.imgUrl2" alt="">
+                        <img v-lazy="imgBox.imgUrl3" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -98,16 +103,43 @@
 </template>
 
 <script>
-export default {};
+import DropDown from "../../components/dropdown";
+export default {
+  name: "shejiao",
+  data() {
+    return {
+      imgBox: {
+          imgUrl1:'../../../static/images/img/shejiao01@2x.png',
+          imgUrl2:'../../../static/images/img/shejiao02@2x.png',
+          imgUrl3:'../../../static/images/img/shejiao03@2x.png',
+      },
+      titleName: "社交解决方案",
+      isClose: false
+    };
+  },
+  components: {
+    DropDown
+  },
+  methods: {
+    handleBlur() {
+      this.isClose = true;
+    },
+    isRotate(rotate) {
+      if (rotate == false) {
+        this.isClose = false;
+      }
+    }
+  }
+};
 </script>
 
 <style scoped>
-*{
-    margin: 0;
-    padding:0;
+* {
+  margin: 0;
+  padding: 0;
 }
-.last-list>div>img{
-    width: 32%;
+.last-list > div > img {
+  width: 32%;
 }
 .icon-title::after {
   display: block;
@@ -167,7 +199,7 @@ export default {};
 }
 
 /* 小圆圈+标题的样式 */
-.last-list>img {
+.last-list > img {
   width: 1.9%;
   height: 1.9%;
   float: left;
@@ -190,6 +222,4 @@ export default {};
   color: #666666;
   padding-left: 3%;
 }
-
-
 </style>
