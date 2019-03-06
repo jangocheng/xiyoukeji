@@ -12,9 +12,11 @@
             达到相同的渗透率和借款规模，预计市场规模将达到4000亿以上。
           </p>
         </div>
-        <div class="big-title">
-          <i class="iconfont icon-shixiangyoujiantou-"></i>
-          <h3>用户端（iOS+安卓）</h3>
+        <div class="big-title" style="margin-top:20px;">
+          <div class='title-bar'>
+            <img src="../../../static/images/icons/right_icon.png" alt="" class='jiantou'/>
+            <span>用户端（iOS+安卓）</span>
+          </div>
           <p>
             注册登录，可贷额度，货款查询，利率计算，到期还款，实名认证，绑卡，运营商认证，
             货款记录，风控模型，反欺诈，全流程管理
@@ -25,10 +27,12 @@
             <img v-lazy="imgBox.imgUrl3" alt="">
           </div>
         </div>
-        <div class="gongsi big-title">
-          <i class="iconfont icon-shixiangyoujiantou-"></i>
-          <h3>公司运营端</h3>
-          <img v-lazy="imgBox.imgUrl4" alt="">
+        <div class="gongsi big-title" style='margin-top:27px'>
+          <div class='title-bar'>
+            <img src="../../../static/images/icons/right_icon.png" alt="" class='jiantou'/>
+            <span>公司运营端</span>
+          </div>
+          <img v-lazy="imgBox.imgUrl4" alt="" style='margin-top:15px;'>
         </div>
       </div>
       <div class="system">
@@ -85,16 +89,18 @@
       </div>
       <div class="xianjin">
         <div class="last-box">
-          <div class="big-title">
-            <i class="iconfont icon-shixiangyoujiantou-"></i>
-            <h3>风控模型特征</h3>
+          <div class="big-title" style='margin-top:20px;'>
+          <div class='title-bar'>
+            <img src="../../../static/images/icons/right_icon.png" alt="" class='jiantou'/>
+            <span>风控模型特征</span>
+          </div>
             <p>有效快速识别用户欺诈风险与逾期风险</p>
           </div>
         </div>
       </div>
-      <div style="margin-top:-20px;">
+      <div style="margin-top:-20px;padding:0 5%;">
         <div v-for="item in lastList" :key="item.id" class="last-list">
-          <div class="last-list-title">
+          <div class="last-list-title" style="margin-left:-4%;">
             <img src="../../../static/images/icons/oval@2x.png" alt="">
             <span>{{item.title}}</span>
           </div>
@@ -179,30 +185,6 @@ export default {
   margin-top: 10px;
   line-height: 20px;
 }
-.big-title::after {
-  clear: both;
-  display: block;
-  content: "";
-}
-.big-title {
-  margin-top: 10px;
-}
-.big-title > h3 {
-  font-size: 16px;
-  color: #333333;
-  font-weight: 600;
-  line-height: 40px;
-}
-.big-title > p {
-  font-size: 12px;
-  color: #333333;
-  line-height: 20px;
-}
-.icon-shixiangyoujiantou- {
-  font-size: 26px;
-  color: #f1b84b;
-  float: left;
-}
 .big-title .pic-box img {
   width: 32.3%;
   height: 60%;
@@ -214,7 +196,7 @@ export default {
   width: 100%;
 }
 .system {
-  margin-top: 27px;
+  margin-top: 7px;
 }
 .system p {
   color: #666666;

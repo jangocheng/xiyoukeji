@@ -10,41 +10,40 @@ body {
 }
 
 /* 标题样式 */
-.big-title::after {
+.big-title > .title-bar::after {
     clear: both;
     display: block;
     content: "";
   }
-  .big-title {
-    margin-top: 10px;
+  .big-title > .title-bar{
+    margin-left: -5.45%;
   }
-  .big-title > h3 {
+  .big-title > .title-bar>span {
     font-size: 16px;
     color: #333333;
     font-weight: 600;
-    line-height: 40px;
-    /* margin-left: 5%; */
-    /* padding: 0 5%; */
+    vertical-align: middle;
+    margin-left: 1%;
   }
   .big-title > p {
     font-size: 12px;
     color: #333333;
     line-height: 20px;
+    margin-top: 10px;
   }
-  .icon-shixiangyoujiantou- {
-    font-size: 26px;
-    color: #f1b84b;
-    position: absolute;
-    left: 0;
-    /* float: left; */
-    text-align:right;
+  .big-title > .title-bar > .jiantou{
+    width: 2.8%;
   }
 
   /* 小圈圈+标题+内容 的样式 */
+  
   .last-list {
     margin-top: 20px;
     padding-right: 5%;
     width: 100%;
+  }
+  .last-list>.last-list-title{
+    margin-left:-4%;
   }
   .last-list>.last-list-title::after{
     display: block;
@@ -53,9 +52,9 @@ body {
   }
   .last-list>.last-list-title>img {
     width: 1.4%;
-    /* height: 1.4%; */
     vertical-align: middle;
-    padding-left: 5%;
+   
+    /* padding-left: 5%; */
   }
   .last-list>.last-list-title>span {
     color: #666666;
@@ -63,16 +62,12 @@ body {
     line-height: 9px;
     margin-top: 20px;
     vertical-align: middle;
+    margin-left: 1%;
   }
   .last-list>p {
     margin-top: 10px;
     line-height: 20px;
     font-size: 12px;
     color: #666666;
-    padding:0 5%;
-  }
-
-/* 页面padding公用样式 */
-  .pd-st{
-      padding: 20px 5%;
+    /* padding:0 5%; */
   }

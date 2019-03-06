@@ -24,9 +24,11 @@
                 基于多种交友功能，为企业打造一站式交友平台及社区管理平台。
                 社交APP开发采用动态智能DNS掉线，快速重连机制，消息排重，持续重连直至到达。
             </p>
-            <div class="big-title">
-                <i class="iconfont icon-shixiangyoujiantou-"></i>
-                <h3>覆盖行业</h3>
+            <div class="big-title" style='margin-top:20px;'>
+                <div class="title-bar">
+                    <img src="../../../static/images/icons/right_icon.png" alt="" class="jiantou">
+                    <span>覆盖行业</span>
+                </div>
                 <p>社交系统覆盖多个行业，支持个性化定制需求</p>
             </div>
             <div class="icon-title">
@@ -78,20 +80,22 @@
                 </ul>
             </div>
             <div class="big-title" style="margin-top:40px;">
-                <i class="iconfont icon-shixiangyoujiantou-"></i>
-                <h3>场景应用</h3>
+                <div class="title-bar">
+                    <img src="../../../static/images/icons/right_icon.png" alt="" class="jiantou">
+                    <span>场景应用</span>
+                </div>
             </div>
-            <div class="">
-                <div class="last-list">
-                    <div class="last-list-title">
+            <div >
+                <div class="last-list" style="margin-top:15px;">
+                    <div class="last-list-title" style="margin-left:-4%;">
                         <img src="../../../static/images/icons/oval@2x.png" alt="">
-                        <h4>患者端</h4>
+                        <span>向蜜</span>
                     </div>
                     <p>
                         在线问诊，呼吸科医生全程呵护；专属医生，线下专家
                         线上服务；脱敏管理，再也不会忘记打针时间啦！
                     </p>
-                    <div style="margin-top:15px;">
+                    <div style="margin-top:15px;" class='img-box'>
                         <img v-lazy="imgBox.imgUrl1" alt="">
                         <img v-lazy="imgBox.imgUrl2" alt="">
                         <img v-lazy="imgBox.imgUrl3" alt="">
@@ -109,9 +113,9 @@ export default {
   data() {
     return {
       imgBox: {
-          imgUrl1:'../../../static/images/img/shejiao01@2x.png',
-          imgUrl2:'../../../static/images/img/shejiao02@2x.png',
-          imgUrl3:'../../../static/images/img/shejiao03@2x.png',
+        imgUrl1: "../../../static/images/img/shejiao01@2x.png",
+        imgUrl2: "../../../static/images/img/shejiao02@2x.png",
+        imgUrl3: "../../../static/images/img/shejiao03@2x.png"
       },
       titleName: "社交解决方案",
       isClose: false
@@ -138,8 +142,8 @@ export default {
   margin: 0;
   padding: 0;
 }
-.last-list > div > img {
-  width: 32%;
+.last-list .img-box img {
+  width: 32.3%;
 }
 .icon-title::after {
   display: block;
@@ -199,7 +203,7 @@ export default {
 }
 
 /* 小圆圈+标题的样式 */
-.last-list > img {
+/* .last-list > img {
   width: 1.9%;
   height: 1.9%;
   float: left;
@@ -221,5 +225,5 @@ export default {
   font-size: 12px;
   color: #666666;
   padding-left: 3%;
-}
+} */
 </style>

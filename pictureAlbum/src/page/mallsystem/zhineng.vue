@@ -5,9 +5,11 @@
             <div class="head-con">
                 <p>以平台性底层软硬件为基础，以智能传感互联、人机交互、新型展示及大数据处理等新一代信息技术为特征</p>
             </div>
-            <div class="big-title" style="margin-top:-10px">
-                <i class="iconfont icon-shixiangyoujiantou-"></i>
-                <h3>智能硬件</h3>
+            <div class="big-title" style="margin-top:0px;padding:0 5%;">
+                <div class="title-bar">
+                    <img src="../../../static/images/icons/right_icon.png" alt="" class="jiantou">
+                    <span>智能硬件</span>
+                </div>
             </div>
             <div class="zhineng-box">
                 <ul style="margin-top:20px;">
@@ -35,9 +37,11 @@
                     <li>新型显示及大数据处理</li>
                 </ul>
             </div>
-            <div class="big-title" style="margin-top:40px">
-                <i class="iconfont icon-shixiangyoujiantou-"></i>
-                <h3>场景应用</h3>
+            <div class="big-title" style="margin-top:40px;padding:0 5%">
+                <div class="title-bar">
+                    <img src="../../../static/images/icons/right_icon.png" alt="" class="jiantou">
+                    <span>场景应用</span>
+                </div>
             </div>
             <div class="bottom" style="margin-top:-10px">
                 <div class="last-list">
@@ -90,20 +94,24 @@
                     </p>
                 </div>
             </div>
-            <div class="big-title" style="margin-top:40px">
-                <i class="iconfont icon-shixiangyoujiantou-"></i>
-                <h3>案例展示</h3>
+            <div class="big-title" style="margin-top:40px;padding:0 5%;">
+                <div class="title-bar">
+                    <img src="../../../static/images/icons/right_icon.png" alt="" class="jiantou">
+                    <span>案例展示</span>
+                </div>
             </div>
-            <div class="last-list" style="margin-top:20px;">
+            <div class="last-list" style="margin-top:20px;padding:0 5%;">
                 <div class="last-list-title">
                     <img src="../../../static/images/icons/oval@2x.png" alt="">
                     <span>云螺</span>
                 </div>
-                <p>云螺是智能硬件管理APP。用户能便捷地通过手机与智能硬件交互，智能硬件之间的互联互通。（详情请见NO20.案例）</p>
-                <div class="img-box">
-                    <img v-lazy='imgBox.imgUrl1' alt="">
-                    <img v-lazy='imgBox.imgUrl2' alt="">
-                </div>
+                <p
+                    style="padding-right:5%;"
+                >云螺是智能硬件管理APP。用户能便捷地通过手机与智能硬件交互，智能硬件之间的互联互通。（详情请见NO20.案例）</p>
+            </div>
+            <div class="img-box">
+                <img v-lazy="imgBox.imgUrl1" alt="">
+                <img v-lazy="imgBox.imgUrl2" alt="">
             </div>
         </div>
     </div>
@@ -117,7 +125,7 @@ export default {
     return {
       imgBox: {
         imgUrl1: "../../../static/images/img/zhineng1.png",
-        imgUrl2: "../../../static/images/img/zhineng2.png",
+        imgUrl2: "../../../static/images/img/zhineng2.png"
       },
       titleName: "智能硬件解决方案",
       isClose: false
@@ -147,8 +155,8 @@ export default {
 .img-box img {
   width: 30.9%;
 }
-.bottom p {
-  padding-right: 5%;
+.bottom {
+  padding: 0 5%;
 }
 .zhineng-box ul::after {
   clear: both;

@@ -12,26 +12,30 @@
           <p>{{item.con}}</p>
         </div>
       </div>
-      <div class="big-title" style="margin-top:40px">
-        <i class="iconfont icon-shixiangyoujiantou-"></i>
-        <h3>技术架构</h3>
+      <div class="big-title" style="margin-top:40px;padding:0 5%;">
+        <div class="title-bar">
+          <img src="../../../static/images/icons/right_icon.png" alt="" class="jiantou">
+          <span>技术架构</span>
+        </div>
       </div>
-      <img v-lazy='imgBox.imgUrl1' alt="" class="jiagou-img">
-      <div class="big-title" style="margin-top:30px">
-        <i class="iconfont icon-shixiangyoujiantou-"></i>
-        <h3>案例展示</h3>
+      <img v-lazy="imgBox.imgUrl1" alt="" class="jiagou-img">
+      <div class="big-title" style="margin-top:30px;padding:0 5%;">
+        <div class="title-bar">
+          <img src="../../../static/images/icons/right_icon.png" alt="" class="jiantou">
+          <span>案例展示</span>
+        </div>
       </div>
       <div class="bottom-box">
         <div class="last-list" style="margin-top:20px;">
-          <div class="last-list-title">
+          <div class="last-list-title" style="padding:0 2%;">
             <img src="../../../static/images/icons/oval@2x.png" alt="">
             <span>快问学生端</span>
           </div>
         </div>
         <div class="img-box">
-          <img v-lazy='imgBox.imgUrl2' alt="">
-          <img v-lazy='imgBox.imgUrl3' alt="">
-          <img v-lazy='imgBox.imgUrl4' alt="">
+          <img v-lazy="imgBox.imgUrl2" alt="">
+          <img v-lazy="imgBox.imgUrl3" alt="">
+          <img v-lazy="imgBox.imgUrl4" alt="">
         </div>
       </div>
     </div>

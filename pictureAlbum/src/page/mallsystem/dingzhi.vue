@@ -2,9 +2,11 @@
   <div>
     <DropDown :titleName="titleName" :isClose="isClose" v-on:isRotate="isRotate"></DropDown>
     <div class="dingzhi" @click="handleBlur">
-      <div class="title-box">
-        <i class="iconfont icon-shixiangyoujiantou-"></i>
-        <p class="title">定制需求开发</p>
+      <div class='big-title'>
+        <div class="title-bar">
+          <img src="../../../static/images/icons/right_icon.png" alt="" class="jiantou">
+          <span>定制需求开发</span>
+        </div>
       </div>
       <div class="pic-box">
         <div class="pic-con" v-for="(item, index) in picList" :key="item.id">
@@ -43,9 +45,9 @@ export default {
   name: "dingzhi",
   data() {
     return {
-      imgUrl1:'../../../static/images/img/1@2x.png',
-      imgUrl2:'../../../static/images/img/2@2x.png',
-      imgUrl3:'../../../static/images/img/3@2x.png',
+      imgUrl1: "../../../static/images/img/1@2x.png",
+      imgUrl2: "../../../static/images/img/2@2x.png",
+      imgUrl3: "../../../static/images/img/3@2x.png",
       titleName: "商城系统",
       isClose: false,
       thredList: [

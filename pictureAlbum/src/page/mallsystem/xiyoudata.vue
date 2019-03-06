@@ -1,44 +1,48 @@
 <template>
-    <div>
-        <DropDown :titleName="titleName" :isClose="isClose" v-on:isRotate="isRotate"></DropDown>
-        <div class="xiyoudata" style="background:white;margin-top:20px" @click="handleBlur">
-            <div class="head-con">
-                <p>为您定制有特色、有价值的小程序，给您高效的服务与高品质的体验。</p>
-            </div>
-            <div class="big-title" style="margin-top:-10px">
-                <i class="iconfont icon-shixiangyoujiantou-"></i>
-                <h3>优势</h3>
-            </div>
-            <div class="youshi-list">
-                <div v-for="item in youShiList" :key="item.id" class="youshi-con">
-                    <div class="list-left">
-                        <img :src="item.imgUrl" alt="">
-                    </div>
-                    <div class="list-right">
-                        <h4>{{item.title}}</h4>
-                        <p>{{item.con}}</p>
-                    </div>
-                </div>
-            </div>
-            <div class="big-title" style="margin-top:40px">
-                <i class="iconfont icon-shixiangyoujiantou-"></i>
-                <h3>案例展示</h3>
-            </div>
-            <div class="botton-box">
-                <div class="last-list" style="margin-top:10px">
-                    <div class="last-list-title">
-                        <img src="../../../static/images/icons/oval@2x.png" alt="">
-                        <span>青塔网高等教育发展指标数据平台</span>
-                    </div>
-                    <p style="padding-right:5%;">
-                        青塔还致力于为高校和教育部门等提供专业和深度的高等教育数据服务，迄今为止，
-                        青塔已经为包括多所C9高校在内的众多大学提供数据服务。
-                    </p>
-                    <img v-lazy="imgUrl" alt="" class="last-pic">
-                </div>
-            </div>
+  <div>
+    <DropDown :titleName="titleName" :isClose="isClose" v-on:isRotate="isRotate"></DropDown>
+    <div class="xiyoudata" style="background:white;margin-top:20px" @click="handleBlur">
+      <div class="head-con">
+        <p>以平台为基础通过数据分析的方式，传播和分析信息数据。</p>
+      </div>
+      <div class="big-title" style="margin-top:0px;padding:0 5%;">
+        <div class="title-bar">
+          <img src="../../../static/images/icons/right_icon.png" alt="" class="jiantou">
+          <span>我们的优势</span>
         </div>
+      </div>
+      <div class="youshi-list">
+        <div v-for="item in youShiList" :key="item.id" class="youshi-con">
+          <div class="list-left">
+            <img :src="item.imgUrl" alt="">
+          </div>
+          <div class="list-right">
+            <h4>{{item.title}}</h4>
+            <p>{{item.con}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="big-title" style="margin-top:40px;padding: 0 5%;">
+        <div class="title-bar">
+          <img src="../../../static/images/icons/right_icon.png" alt="" class="jiantou">
+          <span>案例展示</span>
+        </div>
+      </div>
+      <div class="botton-box">
+        <div class="last-list" style="margin-top:10px">
+          <div class="last-list-title" style="padding:0 5%;">
+            <img src="../../../static/images/icons/oval@2x.png" alt="">
+            <span>青塔网高等教育发展指标数据平台</span>
+          </div>
+          <p style="padding:0 5%;">
+            青塔还致力于为高校和教育部门等提供专业和深度的高等教育数据服务，迄今为止，
+            青塔已经为包括多所C9高校在内的众多大学提供数据服务。
+          </p>
+          <img v-lazy="imgUrl" alt="" class="last-pic">
+        </div>
+      </div>
     </div>
+  </div>
 </template>
 
 <script>
@@ -47,7 +51,7 @@ export default {
   name: "xiyoudata",
   data() {
     return {
-      imgUrl:'../../../static/images/img/last_pic@2x.png',
+      imgUrl: "../../../static/images/img/last_pic@2x.png",
       titleName: "西柚数据解决方案",
       isClose: false,
       youShiList: [

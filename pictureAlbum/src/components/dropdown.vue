@@ -2,7 +2,7 @@
   <div class="dropdown">
     <div class='dropdown-title' @click="handleDropDown">
       <span class='title'>{{titleName}}</span>
-      <img src="../../static/images/icons/up@2x.png" alt="" :class="[rotate ? 'up':'down']" />
+      <img src="../../static/images/icons/up@2x.png" alt="" :class="[rotate ? 'down':'up']" />
     </div>
     <div :class=" [rotate ? 'dropdowm-list-up dropdowm-list' : 'dropdowm-list-down dropdowm-list']" >
       <ul v-for="(item,index) in list" :key="item.title" >

@@ -24,9 +24,11 @@
                     </li>
                 </ul>
             </div>
-            <div class="big-title" style="margin-top:27px">
-                <i class="iconfont icon-shixiangyoujiantou-"></i>
-                <h3>模块介绍</h3>
+            <div class="big-title" style="margin-top:27px;padding:0 5%;">
+                <div class="title-bar">
+                    <img src="../../../static/images/icons/right_icon.png" alt="" class="jiantou">
+                    <span>业务介绍</span>
+                </div>
             </div>
             <div class="icons-con" style="margin-top:20px">
                 <div class="icon-con">
@@ -57,9 +59,11 @@
                     </div>
                 </div>
             </div>
-            <div class="big-title" style="margin-top:27px">
-                <i class="iconfont icon-shixiangyoujiantou-"></i>
-                <h3>覆盖行业</h3>
+            <div class="big-title" style="margin-top:40px;padding:0 5%;">
+                <div class="title-bar">
+                    <img src="../../../static/images/icons/right_icon.png" alt="" class="jiantou">
+                    <span>覆盖行业</span>
+                </div>
             </div>
             <!-- icons的内容 -->
             <div class="icons-list">
@@ -146,12 +150,14 @@
                     </ul>
                 </div>
             </div>
-            <div class="big-title" style="margin-top:40px">
-                <i class="iconfont icon-shixiangyoujiantou-"></i>
-                <h3>Deli-gourment外卖平台</h3>
+            <div class="big-title" style="margin-top:40px;padding:0 5%;">
+                <div class="title-bar">
+                    <img src="../../../static/images/icons/right_icon.png" alt="" class="jiantou">
+                    <span>Deli-gourment外卖平台</span>
+                </div>
             </div>
             <div class="last-con">
-                <div class="last-list" style="margin-top:10px">
+                <div class="last-list" style="margin-top:10px;padding:0 5%;">
                     <div class="last-list-title">
                         <img src="../../../static/images/icons/oval@2x.png" alt="">
                         <span>用户端</span>
@@ -222,7 +228,7 @@
                 </div>
             </div>
             <div class="last-con" style="margin-top:27px;">
-                <div class="last-list" style="margin-top:10px">
+                <div class="last-list" style="margin-top:10px;padding:0 5%;">
                     <div class="last-list-title">
                         <img src="../../../static/images/icons/oval@2x.png" alt="">
                         <span>商家</span>
@@ -284,16 +290,12 @@
                         </ul>
                     </div>
                     <div class="img-box">
-                        <img
-                            v-lazy="imgBox.imgUrl4"
-                            alt=""
-                            style="width:71.4%;"
-                        >
+                        <img v-lazy="imgBox.imgUrl4" alt="" style="width:71.4%;">
                     </div>
                 </div>
             </div>
             <div class="last-con">
-                <div class="last-list" style="margin-top:27px">
+                <div class="last-list" style="margin-top:27px;padding:0 5%;">
                     <div class="last-list-title">
                         <img src="../../../static/images/icons/oval@2x.png" alt="">
                         <span>用户端</span>
@@ -355,11 +357,7 @@
                         </ul>
                     </div>
                     <div class="img-box">
-                        <img
-                            v-lazy="imgBox.imgUrl5"
-                            alt=""
-                            style="width:71.4%;"
-                        >
+                        <img v-lazy="imgBox.imgUrl5" alt="" style="width:71.4%;">
                     </div>
                 </div>
             </div>

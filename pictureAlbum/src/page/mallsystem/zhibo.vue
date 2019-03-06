@@ -2,30 +2,36 @@
     <div>
         <DropDown :titleName="titleName" :isClose="isClose" v-on:isRotate="isRotate"></DropDown>
         <div class="zhibo" style="background:white;margin-top:20px" @click="handleBlur">
-            <div class="big-title">
-                <i class="iconfont icon-shixiangyoujiantou-"></i>
-                <h3>技术架构</h3>
+            <div class="big-title" style='padding:20px 5% 0 5%;'>
+                <div class="title-bar">
+                    <img src="../../../static/images/icons/right_icon.png" alt="" class="jiantou">
+                    <span>技术架构</span>
+                </div>
             </div>
             <div style="padding:0 2.5%;margin-top:20px;">
                 <img src="../../../static/images/img/framework@2x.png" alt="" class="jishu-img">
             </div>
-            <div class="big-title" style="margin-top:40px">
-                <i class="iconfont icon-shixiangyoujiantou-"></i>
-                <h3>产品介绍</h3>
+            <div class="big-title" style='padding:40px 5% 0 5%;'>
+                <div class="title-bar">
+                    <img src="../../../static/images/icons/right_icon.png" alt="" class="jiantou">
+                    <span>产品介绍</span>
+                </div>
             </div>
-            <div>
+            <div style="padding:0 5%;">
                 <div v-for="item in lastList" :key="item.id" class="last-list">
-                    <div class="last-list-title">
+                    <div class="last-list-title" style="margin-left:-4%;">
                         <img src="../../../static/images/icons/oval@2x.png" alt="">
                         <span>{{item.title}}</span>
                     </div>
                     <p>{{item.con}}</p>
                 </div>
             </div>
-            <div class="big-title" style="margin-top:40px">
-                <i class="iconfont icon-shixiangyoujiantou-"></i>
-                <h3>覆盖行业</h3>
-                <p style="padding:0 5%;">开发对接成熟第三方直播平台，降低直播平台开发的技术门槛。用最少的开发成本满足客户建设直播平台的需求。</p>
+            <div class="big-title" style='padding:40px 5% 0 5%;'>
+                <div class="title-bar">
+                    <img src="../../../static/images/icons/right_icon.png" alt="" class="jiantou">
+                    <span>覆盖行业</span>
+                </div>
+                <p>开发对接成熟第三方直播平台，降低直播平台开发的技术门槛。用最少的开发成本满足客户建设直播平台的需求。</p>
             </div>
             <div class="icon-title">
                 <ul>
@@ -75,18 +81,20 @@
                     </li>
                 </ul>
             </div>
-            <div class="big-title" style="margin-top:40px">
-                <i class="iconfont icon-shixiangyoujiantou-"></i>
-                <h3>产品介绍</h3>
-                <p style="padding-left:5%;">包含PC端, APP端(安卓+iOS), 微信端, 手机wap端</p>
+            <div class="big-title" style='padding:40px 5% 0 5%;'>
+                <div class="title-bar">
+                    <img src="../../../static/images/icons/right_icon.png" alt="" class="jiantou">
+                    <span>产品介绍</span>
+                </div>
+                <p>包含PC端, APP端(安卓+iOS), 微信端, 手机wap端</p>
             </div>
             <div class="bottom-box">
-                <div class="last-list">
-                    <div class="last-list-title">
+                <div class="last-list" style='padding:0px 50% 0 5%;'>
+                    <div class="last-list-title" >
                         <img src="../../../static/images/icons/oval@2x.png" alt="">
                         <span>娃娃抓抓</span>
                     </div>
-                    <p style="padding-right:5%;">一款真实在线远程抓娃娃机，手机遥控真实娃娃机。种类丰富，高质量玩偶任你挑选。抓到的娃娃直接邮寄到您家。</p>
+                    <p style="padding-right:7.5%">一款真实在线远程抓娃娃机，手机遥控真实娃娃机。种类丰富，高质量玩偶任你挑选。抓到的娃娃直接邮寄到您家。</p>
                 </div>
                 <div class="my-pic">
                     <img v-lazy="imgBox.imgUrl1" alt="">
@@ -190,5 +198,6 @@ export default {
 }
 .my-pic > img {
   width: 32.2%;
+  margin-top:15px;
 }
 </style>

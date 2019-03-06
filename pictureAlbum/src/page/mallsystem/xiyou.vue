@@ -1,103 +1,107 @@
 <template>
-    <div>
-        <DropDown :titleName="titleName" :isClose="isClose" v-on:isRotate="isRotate"></DropDown>
-        <div class="xiyou" style="background:white;margin-top:20px" @click="handleBlur">
-            <div class="head-con">
-                <p>为您定制有特色、有价值的小程序，给您高效的服务与高品质的体验。</p>
-            </div>
-            <div class="big-title" style="margin-top:-10px">
-                <i class="iconfont icon-shixiangyoujiantou-"></i>
-                <h3>优势</h3>
-            </div>
-            <div class="youshi-list">
-                <div v-for="item in youShiList" :key="item.id" class="youshi-con">
-                    <div class="list-left">
-                        <img v-lazy="item.imgUrl" alt="">
-                    </div>
-                    <div class="list-right">
-                        <h4>{{item.title}}</h4>
-                        <p>{{item.con}}</p>
-                    </div>
-                </div>
-            </div>
-            <div class="big-title" style="margin-top:30px">
-                <i class="iconfont icon-shixiangyoujiantou-"></i>
-                <h3>服务体验</h3>
-            </div>
-            <div class="last-list" style="margin-top:10px">
-                <div class="last-list-title">
-                    <img src="../../../static/images/icons/oval@2x.png" alt="">
-                    <span>平台</span>
-                </div>
-            </div>
-            <div class="pingtai-con">
-                <ul>
-                    <li>
-                        <img src="../../../static/images/icons/pingtai1.png" alt="">
-                        <h4>更快获取用户</h4>
-                    </li>
-                    <li>
-                        <img src="../../../static/images/icons/pingtai3.png" alt="">
-                        <h4>技术门槛更低</h4>
-                    </li>
-                    <li>
-                        <img src="../../../static/images/icons/pingtai5.png" alt="">
-                        <h4>多元的营销手段</h4>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <img src="../../../static/images/icons/pingtai2.png" alt="">
-                        <h4>微信生态营销</h4>
-                    </li>
-                    <li>
-                        <img src="../../../static/images/icons/pingtai4.png" alt="">
-                        <h4>更少的前期成本</h4>
-                    </li>
-                    <li>
-                        <img src="../../../static/images/icons/pingtai5.png" alt="">
-                        <h4>用户数据统计留存</h4>
-                    </li>
-                </ul>
-            </div>
-            <div class="last-list" style="margin-top:40px">
-                <div class="last-list-title">
-                    <img src="../../../static/images/icons/oval@2x.png" alt="">
-                    <span>用户</span>
-                </div>
-            </div>
-            <div class="foot-list">
-                <ul>
-                    <li>
-                        <img src="../../../static/images/icons/yonghu1.png" alt="">
-                        <h4>微信对接免注册</h4>
-                    </li>
-                    <li>
-                        <img src="../../../static/images/icons/yonghu3.png" alt="">
-                        <h4>附近优惠都知道</h4>
-                    </li>
-                    <li>
-                        <img src="../../../static/images/icons/yonghu5.png" alt="">
-                        <h4>用户体验堪比app</h4>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <img src="../../../static/images/icons/yonghu2.png" alt="">
-                        <h4>主动分享玩转社区</h4>
-                    </li>
-                    <li>
-                        <img src="../../../static/images/icons/yonghu4.png" alt="">
-                        <h4>无推送免打扰</h4>
-                    </li>
-                    <li>
-                        <img src="../../../static/images/icons/yonghu6.png" alt="">
-                        <h4>更多玩法不断开放中</h4>
-                    </li>
-                </ul>
-            </div>
+  <div>
+    <DropDown :titleName="titleName" :isClose="isClose" v-on:isRotate="isRotate"></DropDown>
+    <div class="xiyou" style="background:white;margin-top:20px" @click="handleBlur">
+      <div class="head-con">
+        <p>为您定制有特色、有价值的小程序，给您高效的服务与高品质的体验。</p>
+      </div>
+      <div class="big-title" style="margin-top:0px;padding:0 5%;">
+        <div class="title-bar">
+          <img src="../../../static/images/icons/right_icon.png" alt="" class="jiantou">
+          <span>优势</span>
         </div>
+      </div>
+      <div class="youshi-list">
+        <div v-for="item in youShiList" :key="item.id" class="youshi-con">
+          <div class="list-left">
+            <img v-lazy="item.imgUrl" alt="">
+          </div>
+          <div class="list-right">
+            <h4>{{item.title}}</h4>
+            <p>{{item.con}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="big-title" style="margin-top:30px;padding:0 5%">
+        <div class="title-bar">
+          <img src="../../../static/images/icons/right_icon.png" alt="" class="jiantou">
+          <span>服务体验</span>
+        </div>
+      </div>
+      <div class="last-list" style="margin-top:10px">
+        <div class="last-list-title" style="padding:0 5%;">
+          <img src="../../../static/images/icons/oval@2x.png" alt="">
+          <span>平台</span>
+        </div>
+      </div>
+      <div class="pingtai-con">
+        <ul>
+          <li>
+            <img src="../../../static/images/icons/pingtai1.png" alt="">
+            <h4>更快获取用户</h4>
+          </li>
+          <li>
+            <img src="../../../static/images/icons/pingtai3.png" alt="">
+            <h4>技术门槛更低</h4>
+          </li>
+          <li>
+            <img src="../../../static/images/icons/pingtai5.png" alt="">
+            <h4>多元的营销手段</h4>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <img src="../../../static/images/icons/pingtai2.png" alt="">
+            <h4>微信生态营销</h4>
+          </li>
+          <li>
+            <img src="../../../static/images/icons/pingtai4.png" alt="">
+            <h4>更少的前期成本</h4>
+          </li>
+          <li>
+            <img src="../../../static/images/icons/pingtai5.png" alt="">
+            <h4>用户数据统计留存</h4>
+          </li>
+        </ul>
+      </div>
+      <div class="last-list" style="margin-top:40px">
+        <div class="last-list-title" style="padding:0 5%;">
+          <img src="../../../static/images/icons/oval@2x.png" alt="">
+          <span>用户</span>
+        </div>
+      </div>
+      <div class="foot-list">
+        <ul>
+          <li>
+            <img src="../../../static/images/icons/yonghu1.png" alt="">
+            <h4>微信对接免注册</h4>
+          </li>
+          <li>
+            <img src="../../../static/images/icons/yonghu3.png" alt="">
+            <h4>附近优惠都知道</h4>
+          </li>
+          <li>
+            <img src="../../../static/images/icons/yonghu5.png" alt="">
+            <h4>用户体验堪比app</h4>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <img src="../../../static/images/icons/yonghu2.png" alt="">
+            <h4>主动分享玩转社区</h4>
+          </li>
+          <li>
+            <img src="../../../static/images/icons/yonghu4.png" alt="">
+            <h4>无推送免打扰</h4>
+          </li>
+          <li>
+            <img src="../../../static/images/icons/yonghu6.png" alt="">
+            <h4>更多玩法不断开放中</h4>
+          </li>
+        </ul>
+      </div>
     </div>
+  </div>
 </template>
 
 <script>
@@ -163,7 +167,7 @@ export default {
 </script>
 
 <style scoped>
-.xiyou{
+.xiyou {
   padding-bottom: 20px;
 }
 .foot-list {

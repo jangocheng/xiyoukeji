@@ -59,40 +59,44 @@
                 <img v-lazy="imgBox.imgUrl2" alt="">
                 <img v-lazy="imgBox.imgUrl3" alt="">
             </div>
-            <div class="big-title" style="margin-top:27px">
-                <i class="iconfont icon-shixiangyoujiantou-"></i>
-                <h3>模块介绍</h3>
-            </div>
-            <div class="bottom-box" style="margin-top:-20px">
-                <div class="last-list">
-                    <div class="last-list-title">
-                        <img src="../../../static/images/icons/oval@2x.png" alt="">
-                        <span>个人服务</span>
-                    </div>
-                    <p>提供各种类型的法律服务，以律师与用户一对一服务的模式，全面满足用户的法律需求。</p>
-                </div>
-                <div class="last-list">
-                    <div class="last-list-title">
-                        <img src="../../../static/images/icons/oval@2x.png" alt="">
-                        <span>政企服务</span>
-                    </div>
-                    <p>由5年以上经验的专业律师团队为政府机关单位和企业提供有关法律的全方位线上服务。</p>
-                </div>
-                <div class="last-list">
-                    <div class="last-list-title">
-                        <img src="../../../static/images/icons/oval@2x.png" alt="">
-                        <span>免费咨询</span>
-                    </div>
-                    <p>用户可在咨询板块发布提问，律师提供一次简要的文字回复，咨询内容公开。</p>
-                </div>
-                <div class="last-list">
-                    <div class="last-list-title">
-                        <img src="../../../static/images/icons/oval@2x.png" alt="">
-                        <span>公益服务</span>
-                    </div>
-                    <p>校园公益普法与免费法律诉讼援助</p>
+            <div class="big-title" style="margin-top:27px;padding:0 5%;">
+                <div class="title-bar">
+                    <img src="../../../static/images/icons/right_icon.png" alt="" class="jiantou">
+                    <span>模块介绍</span>
                 </div>
             </div>
+            <!-- <div style="margin:0 5%;"> -->
+                <div class="bottom-box" style="margin-top:0px;padding:0 5%;">
+                    <div class="last-list">
+                        <div class="last-list-title">
+                            <img src="../../../static/images/icons/oval@2x.png" alt="">
+                            <span>个人服务</span>
+                        </div>
+                        <p>提供各种类型的法律服务，以律师与用户一对一服务的模式，全面满足用户的法律需求。</p>
+                    </div>
+                    <div class="last-list">
+                        <div class="last-list-title">
+                            <img src="../../../static/images/icons/oval@2x.png" alt="">
+                            <span>政企服务</span>
+                        </div>
+                        <p>由5年以上经验的专业律师团队为政府机关单位和企业提供有关法律的全方位线上服务。</p>
+                    </div>
+                    <div class="last-list">
+                        <div class="last-list-title">
+                            <img src="../../../static/images/icons/oval@2x.png" alt="">
+                            <span>免费咨询</span>
+                        </div>
+                        <p>用户可在咨询板块发布提问，律师提供一次简要的文字回复，咨询内容公开。</p>
+                    </div>
+                    <div class="last-list">
+                        <div class="last-list-title">
+                            <img src="../../../static/images/icons/oval@2x.png" alt="">
+                            <span>公益服务</span>
+                        </div>
+                        <p>校园公益普法与免费法律诉讼援助</p>
+                    </div>
+                </div>
+            <!-- </div> -->
         </div>
     </div>
 </template>

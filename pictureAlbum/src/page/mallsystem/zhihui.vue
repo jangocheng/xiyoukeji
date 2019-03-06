@@ -17,35 +17,42 @@
                         <p>更加专业智能的服务，先进的运营模式，全方位提高诊所管理，降低成本，便利患者。</p>
                     </div>
                 </div>
-                <div class="big-title">
-                    <i class="iconfont icon-shixiangyoujiantou-"></i>
-                    <h3>风控模型特征</h3>
+                <div class="big-title" style="margin-top:20px;">
+                    <div class="title-bar">
+                        <img
+                            src="../../../static/images/icons/right_icon.png"
+                            alt=""
+                            class="jiantou"
+                        >
+                        <span>覆盖行业</span>
+                    </div>
                     <p>让互联网与医疗多层面深度融合，创造新的发展生态，智连您的健康。</p>
                 </div>
             </div>
             <div class="icon-box">
-                <ul>
+                <ul style="margin-top:13px;">
                     <li>
                         <img src="../../../static/images/icons/icon1@2x.png" alt="">
-                        <h4 style="margin-top:15px;">健康咨询</h4>
                     </li>
                     <li>
                         <img src="../../../static/images/icons/icon2@2x.png" alt="">
-                        <h4 style="margin-top:10px;">医疗软件</h4>
                     </li>
                     <li>
                         <img src="../../../static/images/icons/icon3@2x.png" alt="">
-                        <h4 style="margin-top:5px;">保健食品</h4>
                     </li>
                 </ul>
-                <ul>
+                <ul style="margin-top:5px;">
+                    <li>健康咨询</li>
+                    <li>医疗软件</li>
+                    <li>保健食品</li>
+                </ul>
+                <ul style="margin-top:30px;">
                     <li>
                         <img
                             src="../../../static/images/icons/icon4@2x.png"
                             alt=""
                             style="width:35%;"
                         >
-                        <h4 style="margin-top:13px;">养老服务</h4>
                     </li>
                     <li>
                         <img
@@ -53,7 +60,6 @@
                             alt=""
                             style="width:38%;"
                         >
-                        <h4 style="margin-top:13px;">医药科技</h4>
                     </li>
                     <li>
                         <img
@@ -61,52 +67,64 @@
                             alt=""
                             style="width:38%;"
                         >
-                        <h4 style="margin-top:16px;">智能穿戴</h4>
                     </li>
                 </ul>
-                <ul style="width:90%">
+                <ul style="margin-top:5px;">
+                    <li>养老服务</li>
+                    <li>医药科技</li>
+                    <li>智能穿戴</li>
+                </ul>
+                <ul style="margin-top:30px;width:90%">
                     <li>
                         <img
                             src="../../../static/images/icons/icon7@2x.png"
                             alt=""
                             style="width:48%;"
                         >
-                        <h4 style="margin-top:13px;">医院机构</h4>
                     </li>
                     <li>
                         <img
                             src="../../../static/images/icons/icon8@2x.png"
                             alt=""
-                            style="width:38%;margin-top:0px;"
+                            style="width:38%;"
                         >
-                        <h4 style="margin-top:15px;">医疗器械</h4>
                     </li>
                     <li>
                         <img
                             src="../../../static/images/icons/icon9@2x.png"
                             alt=""
-                            style="width:45%;margin-top:3px;"
+                            style="width:45%;"
                         >
-                        <h4 style="margin-top:13px;">基因检测</h4>
                     </li>
                     <li>
                         <img
                             src="../../../static/images/icons/icon10@2x.png"
                             alt=""
-                            style="width:45%;margin-top:5px;"
+                            style="width:45%;"
                         >
-                        <h4 style="margin-top:18px;">整形美容</h4>
                     </li>
+                </ul>
+                <ul style="margin-top:5px;width:90%">
+                    <li>医院机构</li>
+                    <li>医疗器械</li>
+                    <li>基因检测</li>
+                    <li>整形美容</li>
                 </ul>
             </div>
             <div class="zhihui">
-                <div class="big-title">
-                    <i class="iconfont icon-shixiangyoujiantou-"></i>
-                    <h3>场景应用</h3>
+                <div class="big-title" style="margin-top:16px">
+                    <div class="title-bar">
+                        <img
+                            src="../../../static/images/icons/right_icon.png"
+                            alt=""
+                            class="jiantou"
+                        >
+                        <span>场景应用</span>
+                    </div>
                 </div>
                 <div class="last-box">
                     <div class="last-list">
-                        <div class="last-list-title">
+                        <div class="last-list-title" style="margin-left:-4%;">
                             <img src="../../../static/images/icons/oval@2x.png" alt="">
                             <span>患者端</span>
                         </div>
@@ -123,7 +141,7 @@
                 </div>
                 <div class="last-box" style="margin-top:27px;">
                     <div class="last-list">
-                        <div class="last-list-title">
+                        <div class="last-list-title" style="margin-left:-4%;">
                             <img src="../../../static/images/icons/oval@2x.png" alt="">
                             <span>医生端</span>
                         </div>
@@ -176,20 +194,6 @@ export default {
 .last-list > .box-images > img {
   width: 32%;
 }
-.last-list h4 {
-  color: #666666;
-  font-size: 14px;
-  line-height: 9px;
-  margin-top: 20px;
-  margin-left: 3%;
-}
-.last-list p {
-  margin-top: 10px;
-  line-height: 20px;
-  font-size: 12px;
-  color: #666666;
-  padding-left: 3%;
-}
 .icon-box h4 {
   font-size: 14px;
   color: #333333;
@@ -200,7 +204,7 @@ export default {
   width: 80%;
   display: flex;
   justify-content: space-around;
-  margin-top: 33px;
+  align-items: center;
 }
 .icon-box img {
   width: 50%;
@@ -211,36 +215,13 @@ export default {
   float: left;
   text-align: center;
   width: 23%;
+  color: #333333;
+  font-size: 14px;
 }
 .icon-box ul::after {
   display: block;
   clear: both;
   content: "";
-}
-.icon-shixiangyoujiantou- {
-  font-size: 26px;
-  color: #f1b84b;
-  margin-left: -30px;
-  float: left;
-}
-.big-title::after {
-  clear: both;
-  display: block;
-  content: "";
-}
-.big-title {
-  margin-top: 10px;
-}
-.big-title > h3 {
-  font-size: 16px;
-  color: #333333;
-  font-weight: 600;
-  line-height: 40px;
-}
-.big-title > p {
-  font-size: 12px;
-  color: #333333;
-  line-height: 20px;
 }
 .zhihui {
   background: white;
