@@ -106,7 +106,7 @@ export default {
   top: 100%;
   background: white;
   z-index: 10;
-  box-shadow: 0px 5px 10px #d6d6d6;
+  box-shadow: 0px 1px 10px #dfdfdf;
 
 }
 .dropdowm-list li{
@@ -136,7 +136,7 @@ export default {
   position: relative;
   padding: 15px 5%;
   z-index: 999;
-  box-shadow: 0px 5px 10px #d6d6d6;
+  box-shadow: 0px 5px 10px #f0f0f0;
   background: white;
 }
 .dropdown-title>span{
