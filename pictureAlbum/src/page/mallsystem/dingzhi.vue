@@ -158,7 +158,7 @@ export default {
   text-align: center;
 }
 .small-title {
-  margin-top: 15px;
+  margin-top:7%;
   font-size: 10px;
   color: #ffffff;
 }
