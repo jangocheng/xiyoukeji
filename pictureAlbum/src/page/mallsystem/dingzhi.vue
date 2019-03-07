@@ -17,11 +17,11 @@
           <div class="small-title">后台管理(平台后台 / 商家后台)</div>
           <div class="small-con">平台管理整体运营商家管理入驻店铺</div>
         </div>
-        <div class="pic" style="background:url(../../../static/images/img/pic3@2x.png)">
+        <div class="pic" style="background:url(../../../static/images/img/pic3@2x.png);margin-top:3px;">
           <div class="small-title">PC端(购物商城)</div>
           <div class="small-con">完整购物体验和企业信息展示、商家入驻等</div>
         </div>
-        <div class="pic" style="background:url(../../../static/images/img/pic4@2x.png);margin-left:0.89%;">
+        <div class="pic" style="background:url(../../../static/images/img/pic4@2x.png);margin-left:0.89%;margin-top:3px;">
           <div class="small-title">APP(iPhone / Android)</div>
           <div class="small-con">搭建原生APP，聚拢用户购物、交流...</div>
         </div>
@@ -152,7 +152,6 @@ export default {
 .pic {
   width: 49.5%;
   float: left;
-  margin-top: 10px;
   height: 90px;
   background: no-repeat;
   background-size: 100% auto;
@@ -177,6 +176,7 @@ export default {
   content: "";
 }
 .pic-box {
+  margin-top: 15px;
 }
 .text-con {
   color: #333333;
