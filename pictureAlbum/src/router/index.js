@@ -89,5 +89,16 @@ export default new Router({
                 require(['@/page/mallsystem/Zaixian.vue'], resolve)
             }
         },
+        {
+            path: '/firstPage',
+            name: 'firstPage',
+            component(resolve) {
+                require(['@/pages/firstPage.vue'], resolve)
+            }
+        },
+        {
+            path: '/',
+            redirect: '/firstPage'
+        },
     ]
 })

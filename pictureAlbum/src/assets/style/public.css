@@ -1,0 +1,12 @@
+.align-center {
+    text-align: center;
+}
+
+.header .text h2:after {
+    content: '';
+    display: block;
+    height: 1px;
+    background: #fff;
+    margin: 4px 0 10px calc(50% - 10px);
+    width: 20px;
+}

@@ -6,13 +6,14 @@ import router from './router'
 import App from './App'
 import './assets/style/reset.css'
 import './assets/style/border.css'
+import './assets/style/public.css'
 import '@/style/index.css'
 import VueLazyload from 'vue-lazyload'
 FastClick.attach(document.body)
 
 Vue.config.productionTip = false
 Vue.use(VueLazyload)
-/* eslint-disable no-new */
+    /* eslint-disable no-new */
 new Vue({
     router,
     render: h => h(App)
