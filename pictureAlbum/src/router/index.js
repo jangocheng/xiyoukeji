@@ -1,82 +1,93 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-// import HelloWorld from '@/components/HelloWorld'
-import Dingzhi from '@/page/mallsystem/Dingzhi'
-import Xianjin from '@/page/mallsystem/Xianjin'
-import Zhihui from '@/page/mallsystem/Zhihui'
-import Shejiao from '@/page/mallsystem/Shejiao'
-import Zhibo from '@/page/mallsystem/Zhibo'
-import Falv from '@/page/mallsystem/Falv'
-import Guanwang from '@/page/mallsystem/Guanwang'
-import O2o from '@/page/mallsystem/O2o'
-import Xiyou from '@/page/mallsystem/Xiyou'
-import Zhineng from '@/page/mallsystem/Zhineng'
-import Xiyoudata from '@/page/mallsystem/Xiyoudata'
-import Zaixian from '@/page/mallsystem/Zaixian'
+
 
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {
-      path: '/dingzhi',
-      name: 'dingzhi',
-      component: Dingzhi
-    },
-    {
-      path: '/xianjin',
-      name: 'xianjin',
-      component: Xianjin
-    },
-    {
-      path: '/zhihui',
-      name: 'zhihui',
-      component: Zhihui
-    },
-    {
-      path: '/shejiao',
-      name: 'shejiao',
-      component: Shejiao
-    },
-    {
-      path: '/zhibo',
-      name: 'zhibo',
-      component: Zhibo
-    },
-    {
-      path: '/falv',
-      name: 'falv',
-      component: Falv
-    },
-    {
-      path: '/guanwang',
-      name: 'guanwang',
-      component: Guanwang
-    },
-    {
-      path: '/o2o',
-      name: 'o2o',
-      component: O2o
-    },
-    {
-      path: '/xiyou',
-      name: 'xiyou',
-      component: Xiyou
-    },
-    {
-      path: '/zhineng',
-      name: 'zhineng',
-      component: Zhineng
-    },
-    {
-      path: '/xiyoudata',
-      name: 'xiyoudata',
-      component: Xiyoudata
-    },
-    {
-      path: '/zaixian',
-      name: 'zaixian',
-      component: Zaixian
-    },
-  ]
+    routes: [{
+            path: '/dingzhi',
+            name: 'dingzhi',
+            component(resolve) {
+                require(['@/page/mallsystem/Dingzhi.vue'], resolve)
+            }
+        },
+        {
+            path: '/xianjin',
+            name: 'xianjin',
+            component(resolve) {
+                require(['@/page/mallsystem/Xianjin.vue'], resolve)
+            }
+        },
+        {
+            path: '/zhihui',
+            name: 'zhihui',
+            component(resolve) {
+                require(['@/page/mallsystem/Zhihui.vue'], resolve)
+            }
+        },
+        {
+            path: '/shejiao',
+            name: 'shejiao',
+            component(resolve) {
+                require(['@/page/mallsystem/Shejiao.vue'], resolve)
+            }
+        },
+        {
+            path: '/zhibo',
+            name: 'zhibo',
+            component(resolve) {
+                require(['@/page/mallsystem/Zhibo.vue'], resolve)
+            }
+        },
+        {
+            path: '/falv',
+            name: 'falv',
+            component(resolve) {
+                require(['@/page/mallsystem/Falv.vue'], resolve)
+            }
+        },
+        {
+            path: '/guanwang',
+            name: 'guanwang',
+            component(resolve) {
+                require(['@/page/mallsystem/Guanwang.vue'], resolve)
+            }
+        },
+        {
+            path: '/o2o',
+            name: 'o2o',
+            component(resolve) {
+                require(['@/page/mallsystem/O2o.vue'], resolve)
+            }
+        },
+        {
+            path: '/xiyou',
+            name: 'xiyou',
+            component(resolve) {
+                require(['@/page/mallsystem/Xiyou.vue'], resolve)
+            }
+        },
+        {
+            path: '/zhineng',
+            name: 'zhineng',
+            component(resolve) {
+                require(['@/page/mallsystem/Zhineng.vue'], resolve)
+            }
+        },
+        {
+            path: '/xiyoudata',
+            name: 'xiyoudata',
+            component(resolve) {
+                require(['@/page/mallsystem/Xiyoudata.vue'], resolve)
+            }
+        },
+        {
+            path: '/zaixian',
+            name: 'zaixian',
+            component(resolve) {
+                require(['@/page/mallsystem/Zaixian.vue'], resolve)
+            }
+        },
+    ]
 })
