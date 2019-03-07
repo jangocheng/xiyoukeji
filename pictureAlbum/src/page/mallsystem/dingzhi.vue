@@ -2,18 +2,28 @@
   <div>
     <DropDown :titleName="titleName" :isClose="isClose" v-on:isRotate="isRotate"></DropDown>
     <div class="dingzhi" @click="handleBlur">
-      <div class='big-title'>
+      <div class="big-title">
         <div class="title-bar">
           <img src="../../../static/images/icons/right_icon.png" alt="" class="jiantou">
           <span>定制需求开发</span>
         </div>
       </div>
       <div class="pic-box">
-        <div class="pic-con" v-for="(item, index) in picList" :key="item.id">
-          <div class="pic" :style="{ 'background-image': 'url(' + item.imgUrl + ')'}">
-            <div class="small-title">{{item.title}}</div>
-            <div class="small-con">{{item.container}}</div>
-          </div>
+        <div class="pic" style="background:url(../../../static/images/img/pic1@2x.png)">
+          <div class="small-title">微信(微商城 / 微分销)</div>
+          <div class="small-con">打入微信时长，抢占海量用户做推广</div>
+        </div>
+        <div class="pic" style="background:url(../../../static/images/img/pic2@2x.png);margin-left:0.89%;">
+          <div class="small-title">后台管理(平台后台 / 商家后台)</div>
+          <div class="small-con">平台管理整体运营商家管理入驻店铺</div>
+        </div>
+        <div class="pic" style="background:url(../../../static/images/img/pic3@2x.png)">
+          <div class="small-title">PC端(购物商城)</div>
+          <div class="small-con">完整购物体验和企业信息展示、商家入驻等</div>
+        </div>
+        <div class="pic" style="background:url(../../../static/images/img/pic4@2x.png);margin-left:0.89%;">
+          <div class="small-title">APP(iPhone / Android)</div>
+          <div class="small-con">搭建原生APP，聚拢用户购物、交流...</div>
         </div>
       </div>
       <div class="text-con">
@@ -45,6 +55,7 @@ export default {
   name: "dingzhi",
   data() {
     return {
+      screenWidth:0,
       imgUrl1: "../../../static/images/img/1@2x.png",
       imgUrl2: "../../../static/images/img/2@2x.png",
       imgUrl3: "../../../static/images/img/3@2x.png",
@@ -138,31 +149,22 @@ export default {
   font-family: FZLTZHK--GBK1-0;
   font-weight: bold;
 }
-/* .pic-con>div:nth-of-type(odd){
-    margin-left: 0.2rem;
-} */
 .pic {
-  width: 48%;
-  /* width: 3.26rem; */
+  width: 49.5%;
   float: left;
-  /* margin-left: 5px; */
   margin-top: 10px;
   height: 90px;
   background: no-repeat;
   background-size: 100% auto;
   text-align: center;
 }
-
-.pic-con {
-  margin-top: 9px;
-}
 .small-title {
   margin-top: 15px;
   font-size: 10px;
   color: #ffffff;
-  padding: 0 5px;
 }
 .small-con {
+  opacity: 0.78;
   font-size: 8px;
   color: #ffffff;
   padding: 0 5px;
@@ -218,8 +220,5 @@ export default {
 .bottom-box > img {
   width: 32.3%;
   height: 60%;
-}
-.pic {
-  margin-left: 5px;
 }
 </style>
