@@ -44,6 +44,23 @@
                         <img src="../../static/images/pic/2017@2x.png">
                     </div>
                 </div>
+                <div class="sec-item" style="top:710px;">
+                    <div class="date-box">
+                        <img src="../../static/images/pic/text7@2x.png">
+                    </div>
+                    <p class="text mt-5">我们搬迁至北软泰嘉园。戒骄戒躁，新的一年里西柚还将奋力向前。</p>
+                </div>
+                <div class="sec-item" style="top:955px;">
+                    <div class="date-box">
+                        <img src="../../static/images/pic/text8@2x(1).png">
+                    </div>
+                    <p class="text mt-5">西柚攻坚克难，成功研发移动端直播解决方案。</p>
+                </div><div class="sec-item" style="top:1155px;">
+                    <div class="date-box">
+                        <img src="../../static/images/pic/text10@2x.png">
+                    </div>
+                    <p class="text mt-5">成立区块链研究团队</p>
+                </div>
             </div>
             <div class="fl mid-sec">
                 <img src="../../static/images/pic/oval2@2x.png" class="oval2 mt-20">
@@ -87,8 +104,32 @@
                     </div>
                     <p class="text mt-5">西柚与浙江律人网络科技有限公司达成合作，成立律超人研发中心。</p>
                 </div>
+                <div class="sec-item" style="top:782px;">
+                    <div class="date-box" style="margin-top:18px;">
+                        <img src="../../static/images/pic/text8@2x.png">
+                    </div>
+                    <p class="text mt-5">西柚实际办公场地面积扩大至600平，拥有自己的产品部、设计部、研发部等，并且与杭州黑帽子软件开发有限公司、杭州新鲜人网络科技有限公司等数家科技企业达成战略合作协议，共谋发展。</p>
+                </div>
+                <div class="sec-item" style="top:1037px;">
+                    <div class="year-box">
+                        <img src="../../static/images/pic/2018@2x.png">
+                    </div>
+                </div>
+                <div class="sec-item" style="top:1058px;">
+                    <div class="date-box" style="margin-top:18px;">
+                        <img src="../../static/images/pic/text9@2x.png">
+                    </div>
+                    <p class="text mt-5">西湖小游伴项目中标，西柚进军旅游项目开发领域</p>
+                </div>
+                <div class="sec-item" style="top:1198px;">
+                    <div class="date-box" style="margin-top:18px;">
+                        <img src="../../static/images/pic/text11@2x.png">
+                    </div>
+                    <p class="text mt-5">暂时放下工作，小柚子们出国旅行</p>
+                </div>
             </div>
         </div>
+        <h3 class="align-center" style="background:#fff;font-size:12px;padding-bottom:20px;">FUTURE</h3>
         <div v-transfer-dom>
             <popup v-model="show10" position="top" height="100%"> 
                 <div class="gy-menu-box">
@@ -163,7 +204,7 @@ export default {
         }
     }
     .develop{
-        padding:20px;
+        padding:20px 20px 10px 20px;
         box-sizing:border-box;
         background:#fff;
         h1{
