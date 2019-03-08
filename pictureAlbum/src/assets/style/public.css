@@ -1,8 +1,13 @@
+body {
+    font-family: 'FZLTXHK--GBK1-0', sans-serif;
+}
+
 .align-center {
     text-align: center;
 }
 
-.header .text h2:after {
+.firstPage .header .text h2:after,
+.technologyStack .header .text p:after {
     content: '';
     display: block;
     height: 1px;
@@ -41,6 +46,14 @@
 
 .mt-30 {
     margin-top: 30px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mt-10 {
+    margin-top: 10px;
 }
 
 .mt-5 {

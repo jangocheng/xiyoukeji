@@ -97,6 +97,13 @@ export default new Router({
             }
         },
         {
+            path: '/technologyStack',
+            name: 'technologyStack',
+            component(resolve) {
+                require(['@/pages/technologyStack.vue'], resolve)
+            }
+        },
+        {
             path: '/',
             redirect: '/firstPage'
         },

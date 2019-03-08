@@ -130,41 +130,24 @@
             </div>
         </div>
         <h3 class="align-center" style="background:#fff;font-size:12px;padding-bottom:20px;">FUTURE</h3>
-        <div v-transfer-dom>
-            <popup v-model="show10" position="top" height="100%"> 
-                <div class="gy-menu-box">
-                    <div class="icon-close" @click="show10=false"></div>
-                    <div class="menu-item">发展历程</div>
-                    <div class="menu-item">技术栈</div>
-                    <div class="menu-item">UI设计规范</div>
-                    <div class="menu-item">产品交付</div>
-                    <div class="menu-item">案例展示</div>
-                    <div class="menu-item">解决方案</div>
-                </div>
-            </popup>
-        </div>
+        <gyHeader v-model="show10"></gyHeader>
     </div>
 </template>
 
 <script>
-import { TransferDom,Popup } from 'vux'
+import gyHeader from '@/components/gyHeader'
 export default {
 	name:'',
 	components:{
-        Popup
+        gyHeader
 	},
-    directives: {
-        TransferDom
-    },
 	data(){
 		return{
             show10:false
 		}
 	},
 	methods:{
-        handleMenu(){
-            console.log(1)
-        }
+        
 	},
 	created(){},
 	mounted(){},
@@ -173,7 +156,6 @@ export default {
 
 <style lang='less'>
 .firstPage{
-    font-family:'FZLTXHK--GBK1-0',sans-serif;
     .header{
         height:110px;
         background:url('../../static/images/pic/bg@2x.png');
