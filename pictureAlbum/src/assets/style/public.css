@@ -10,3 +10,39 @@
     margin: 4px 0 10px calc(50% - 10px);
     width: 20px;
 }
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clear {
+    zoom: 1;
+}
+
+.clear:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.left-sec,
+.right-sec {
+    width: calc(50% - 15px);
+    /* background: #ddd; */
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-5 {
+    margin-top: 5px;
+}
