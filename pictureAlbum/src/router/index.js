@@ -104,6 +104,13 @@ export default new Router({
             }
         },
         {
+            path: '/uiDesign',
+            name: 'uiDesign',
+            component(resolve) {
+                require(['@/pages/uiDesign.vue'], resolve)
+            }
+        },
+        {
             path: '/',
             redirect: '/firstPage'
         },
