@@ -135,14 +135,16 @@
                 弹窗内只有一个按钮时，按钮的宽度为190px 按钮不可点击时，按钮的颜色为#cccccc</div>
             </div>
         </div>
+        <gyHeader v-model="show10"></gyHeader>
     </div>
 </template>
 
 <script>
+import gyHeader from '@/components/gyHeader'
 export default {
 	name:'uiDesign',
 	components:{
-
+        gyHeader
 	},
 	data(){
 		return{

@@ -1,14 +1,14 @@
 <template>
 	<div class="gyHeader">
         <div v-transfer-dom>
-            <popup v-model="value" position="top" height="100%"> 
+            <popup v-model="value" position="top" height="100%" style="z-index:2000;"> 
                 <div class="gy-menu-box">
                     <div class="icon-close" @click="handleValue"></div>
                     <div class="menu-item" @click="handleRoute('/firstPage')">发展历程</div>
                     <div class="menu-item" @click="handleRoute('/technologyStack')">技术栈</div>
                     <div class="menu-item" @click="handleRoute('/uiDesign')">UI设计规范</div>
-                    <div class="menu-item">产品交付</div>
-                    <div class="menu-item">案例展示</div>
+                    <div class="menu-item" @click="handleRoute('/product')">产品交付</div>
+                    <div class="menu-item" @click="handleRoute('/casePresentation')">案例展示</div>
                     <div class="menu-item" @click="handleRoute('/dingzhi')">解决方案</div>
                 </div>
             </popup>

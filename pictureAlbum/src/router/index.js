@@ -111,6 +111,20 @@ export default new Router({
             }
         },
         {
+            path: '/product',
+            name: 'product',
+            component(resolve) {
+                require(['@/pages/product.vue'], resolve)
+            }
+        },
+        {
+            path: '/casePresentation',
+            name: 'casePresentation',
+            component(resolve) {
+                require(['@/pages/casePresentation.vue'], resolve)
+            }
+        },
+        {
             path: '/',
             redirect: '/firstPage'
         },
